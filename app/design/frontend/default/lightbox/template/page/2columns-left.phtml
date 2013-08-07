@@ -10,6 +10,9 @@
 <head>
 <?php echo $this->getChildHtml('head') ?>
 </head>
-<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<body id="indexBody">
+
+	<?php echo $this->getChildHtml('header') ?>
+	
 </body>
 </html>
