@@ -9,7 +9,7 @@ Default layout, loads most of the pages
         <block type="page/html" name="root" output="toHtml" template="page/2columns-left.phtml">
 
             <block type="page/html_head" name="head" as="head">
-                <action method="addCss"><stylesheet>css/lightbox_styles.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/lightbox_style.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/lightbox_skin.css</stylesheet></action>
             </block>
 
