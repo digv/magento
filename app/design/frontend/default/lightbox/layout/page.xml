@@ -11,6 +11,7 @@ Default layout, loads most of the pages
             <block type="page/html_head" name="head" as="head">
                 <action method="addCss"><stylesheet>css/lightbox_style.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/lightbox_skin.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/style.css</stylesheet></action>
             </block>
 
             <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
