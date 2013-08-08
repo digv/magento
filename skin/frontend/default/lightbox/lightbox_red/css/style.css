@@ -1398,7 +1398,7 @@ a.favorEntry:hover {
 .w-proAttention,.w-joinUsProgram,.w-joinUsProgram a,.w-joinUsProgram a span
 	{
 	background-image:
-		url("http://cloud.lbox.me/resource_100313/dev_v2/base-images/pro-attention-bg.png");
+		url("../images/pro-attention-bg.png");
 	background-repeat: no-repeat;
 }
 
@@ -1494,7 +1494,7 @@ a.favorEntry:hover {
 
 .w-wordsOfUser blockquote cite {
 	background:
-		url("http://cloud.lbox.me/resource_100313/dev_v2/themes/default/images/quote-left-mini.png")
+		url("../images/quote-left-mini.png")
 		no-repeat scroll 0 0 transparent;
 	display: block;
 	margin: 5px 0;
@@ -1502,7 +1502,7 @@ a.favorEntry:hover {
 
 .w-wordsOfUser blockquote cite span {
 	background:
-		url("http://cloud.lbox.me/resource_100313/dev_v2/themes/default/images/quote-right-mini.png")
+		url("../images/quote-right-mini.png")
 		no-repeat scroll right bottom transparent;
 	padding: 10px 20px;
 }
@@ -1574,7 +1574,7 @@ a.favorEntry:hover {
 
 #dfp-home-slides {
 	background:
-		url("http://cloud.lbox.me/resource_100313/dev_v2/themes/default/images/home-slide-bg.png")
+		url("../images/home-slide-bg.png")
 		no-repeat scroll 0 bottom transparent;
 	display: block;
 	float: left;
@@ -1591,7 +1591,7 @@ a.favorEntry:hover {
 
 #slidesThumb li {
 	background:
-		url("http://cloud.lbox.me/resource_100313/dev_v2/themes/default/images/home-slide-thumb-bg.png")
+		url("../images/home-slide-thumb-bg.png")
 		no-repeat scroll 0 -12px transparent;
 	cursor: pointer;
 	display: inline;
@@ -2212,7 +2212,7 @@ a.favorEntry:hover {
 
 #otherSites a.in {
 	background:
-		url("http://cloud.lbox.me/resource_100313/dev_v2/themes/default/images/y.gif")
+		url("../images/y.gif")
 		no-repeat scroll 0 -452px transparent;
 	margin: 0 6px 0 2px;
 	padding-left: 20px;
