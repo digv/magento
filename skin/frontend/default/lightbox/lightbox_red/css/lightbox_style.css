@@ -6337,7 +6337,7 @@ table td[class *="span"],table th[class *="span"],.row-fluid table td[class
 
 .socialLogo {
 	background:
-		url(http://cloud8.lbox.me/resource_100313/dev_v2/themes/default/images/siteLogo.gif)
+		url(../images/siteLogo.gif)
 		no-repeat;
 	display: inline-block;
 	overflow: hidden;
@@ -6961,13 +6961,12 @@ a#logo:hover span {
 
 .navSp,.cateWrap h2 a em,#cartCount {
 	background-image:
-		url(http://cloud6.lbox.me/resource_100313/dev_v2/themes/default/images/nav_sprite_lang.png);
+		url(../images/nav_sprite_lang);
 }
 
 .cateWrap h2 a em {
 	background-image:
-		url(http://cloud6.lbox.me/resource_100313/dev_v2/themes/default/images/nav_sprite_lang.png);
-	background-repeat: no-repeat;
+		url(http://cloud6.lbox.me/resour../images/nav_sprite_lang.pngpeat;
 }
 
 .cateWrap .subMenu {
@@ -7179,7 +7178,7 @@ a#logo:hover span {
 
 .allCates a.linkAllCate {
 	background:
-		url(http://cloud6.lbox.me/resource_100313/dev_v2/themes/default/images/nav_sprite_lang.png)
+		url(../images/nav_sprite_lang.png)
 		no-repeat 0 0 transparent;
 }
 
@@ -7210,7 +7209,7 @@ a#logo:hover span {
 .w-breadcrumb li i,.w-breadcrumb .home span,.w-breadcrumb .root a,.w-breadcrumb .rootChild a span,#breadcrumb #rootsub dt span,#breadcrumb #rootsub dt i,#breadcrumb #rootsub.over dt a,#uniUtility .home
 	{
 	background-image:
-		url(http://cloud8.lbox.me/resource_100313/dev_v2/themes/default/images/main-breadcrumb_lang.png);
+		url(../images/main-breadcrumb_lang.png);
 }
 
 .w-breadcrumb li,.w-breadcrumb a,.w-breadcrumb .home span,.w-breadcrumb li i
@@ -7296,7 +7295,7 @@ a#logo:hover span {
 
 * html #breadcrumb #rootsub.over dt a span {
 	background:
-		url(http://cloud1.lbox.me/resource_100313/dev_v2/base-themes/default/images/main-breadcrumb_lang.gif)
+		url(../images/main-breadcrumb_lang.gif)
 		no-repeat right -230px;
 }
 
@@ -7319,14 +7318,14 @@ a#logo:hover span {
 
 #breadcrumb #iconPprol dt a {
 	background-image:
-		url(http://cloud2.lbox.me/resource_100313/dev_v2/themes/default/images/carousel.png);
+		url(../images/main-breadcrumb_lang.png);
 	background-repeat: no-repeat;
 	background-position: 0 -184px;
 }
 
 #breadcrumb #iconPpror dt a {
 	background-image:
-		url(http://cloud2.lbox.me/resource_100313/dev_v2/themes/default/images/carousel.png);
+		url(../images/main-breadcrumb_lang.png);
 	background-repeat: no-repeat;
 	background-position: -42px -184px;
 }
@@ -7383,7 +7382,7 @@ a#logo:hover span {
 #w-prodtViewAll a,.carouselP,.carouselN,#lb-contentControls a,.vThumbnails #thumbnailsUp a,.vThumbnails #thumbnailsDown a,#lb-tnControls a
 	{
 	background-image:
-		url(http://cloud2.lbox.me/resource_100313/dev_v2/themes/default/images/carousel.png);
+		url(../images/main-breadcrumb_lang.png);
 	background-repeat: no-repeat;
 }
 
@@ -7414,7 +7413,7 @@ a#logo:hover span {
 #socialShare a,#socialShare strong,.w-discountCountDown span,.discountCountDown_left,.discountCountDown_right,.flagMore,.texttip em.arrow,.icon100,.iconQuestion,.reviewRight .useful,.reviewRight .usefulDown,#CustomerQA .useful,#CustomerQA .usefulDown,.addIcon2,.saleIcon2,.w-reviews .verfied strong,.w-footer-selector
 	{
 	background-image:
-		url(http://cloud4.lbox.me/resource_100313/dev_v2/themes/default/images/sprite-new.png);
+		url(../images/sprite-new.png);
 	background-repeat: no-repeat;
 }
 
@@ -7666,7 +7665,7 @@ a#logo:hover span {
 
 .w-qaAlllist dd {
 	background:
-		url(http://cloud5.lbox.me/resource_100313/dev_v2/themes/default/images/qaAlllis-bg.gif)
+		url(../images/qaAlllis-bg.gif)
 		repeat-x 0 0 #fff;
 }
 
@@ -7749,7 +7748,7 @@ a#logo:hover span {
 
 .success-big,.success-big-b,.info-big,.err-big,.err-mini,.alert {
 	background-image:
-		url(/images../notification-new.png);
+		url(../images/notification-new.png);
 	background-repeat: no-repeat;
 	background-position: -364px 0;
 }
@@ -8034,7 +8033,7 @@ a.litb-btn:hover {
 
 .page-heading .heading-more a.alt {
 	background-image:
-		url(http://cloud4.lbox.me/resource_100313/dev_v2/themes/default/images/sprite-new.png);
+		url(../images/sprite-new.png);
 	background-position: right 0;
 	color: #990000;
 }
@@ -8214,14 +8213,14 @@ a.litb-btn:hover {
 
 .w-3c-heading p a span {
 	background:
-		url(http://cloud4.lbox.me/resource_100313/dev_v2/themes/default/images/sprite-new.png)
+		url(../images/sprite-new.png)
 		no-repeat left -380px;
 	background-color: #D1877D;
 }
 
 .w-3c-heading p a em {
 	background:
-		url(http://cloud4.lbox.me/resource_100313/dev_v2/themes/default/images/sprite-new.png)
+		url(../images/sprite-new.png)
 		no-repeat right -380px;
 }
 
@@ -8444,7 +8443,7 @@ a.litb-btn:hover {
 .w-discountCountDown_N .save_price,.w-discountCountDown_N .save_price em,.w-discountCountDown_N .save_price i,.w-discountCountDown_N .price_off,.seconds.pro_count,.days.pro_count,.moreDays.pro_count,.pro_count.days .remaining i
 	{
 	background-image:
-		url(http://cloud4.lbox.me/resource_100313/dev_v2/themes/default/images/sprite-new.png);
+		url(../images/sprite-new.png);
 	background-repeat: no-repeat;
 }
 
