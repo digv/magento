@@ -6999,7 +6999,7 @@ a#logo:hover span {
 
 .cateWrap .specialOffer dd p {
 	background:
-		url(http://cloud7.lbox.me/resource_100313/dev_v2/themes/default/images/list-right-arrow.gif)
+		url(../images/list-right-arrow.gif)
 		no-repeat 0 3px transparent;
 }
 
@@ -7332,7 +7332,7 @@ a#logo:hover span {
 
 #breadcrumb #iconPprol dd em,#breadcrumb #iconPpror dd em {
 	background-image:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/y-new.gif);
+		url(../images/y-new.gif);
 	background-repeat: no-repeat;
 	background-position: 0 -900px;
 }
@@ -7375,7 +7375,7 @@ a#logo:hover span {
 #w-prodtViewList li.current,.circleArrowRight,.prodFinalBuyNow,#Item_Description_Spc ul li,.section ul li,.currentPrice dt a.current,.w-ReReply em,.w-qaAlllist dd em,#prodthumbnails a em,.msgSubmit em,.msgSubmit dd,#socialShare em
 	{
 	background-image:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/y-new.gif);
+		url(../images/y-new.gif);
 	background-repeat: no-repeat;
 }
 
@@ -7675,7 +7675,7 @@ a#logo:hover span {
 
 .reviewRight p.reviewInfo,.reviewReplyEdit .w-ReReply dl {
 	background:
-		url(http://cloud6.lbox.me/resource_100313/dev_v2/themes/default/images/quote-left-mini.png)
+		url(../images/quote-left-mini.png)
 		0 0 no-repeat;
 }
 
@@ -7685,13 +7685,13 @@ a#logo:hover span {
 
 .reviewRight .reviewDetails {
 	background:
-		url(http://cloud7.lbox.me/resource_100313/dev_v2/themes/default/images/quote-right-mini.png)
+		url(../images/quote-right-mini.png)
 		right bottom no-repeat;
 }
 
 .reviewReplyEdit .w-ReReply dt {
 	background:
-		url(http://cloud8.lbox.me/resource_100313/dev_v2/themes/default/images/quote-right-mini-b.png)
+		url(../images/quote-right-mini-b.png)
 		right bottom no-repeat;
 }
 
@@ -7845,7 +7845,7 @@ a#logo:hover span {
 
 #wrapper-b,#whyBuyFromUs h2 {
 	background-image:
-		url(http://cloud1.lbox.me/resource_100313/dev_v2/themes/default/images/foot-top-bg.png);
+		url(../images/foot-top-bg.png);
 	background-repeat: no-repeat;
 }
 
@@ -7867,7 +7867,7 @@ a#logo:hover span {
 #whyBuyFromUs .bestMerchandise,#whyBuyFromUs .freeShipping,#whyBuyFromUs .easyOrders,#whyBuyFromUs .freeJoin,#whyBuyFromUs .freeDelivery,#whyBuyFromUs .secure,#mini-joinOurCommunity .mini-facebook,#mini-joinOurCommunity .mini-twitter,#mini-joinOurCommunity .mini-blog,#mini-joinOurCommunity .mini-youtube,#mini-joinOurCommunity .mini-google,#mini-joinOurCommunity .mini-pinterest
 	{
 	background:
-		url(http://cloud2.lbox.me/resource_100313/dev_v2/themes/default/images/footer-sprite.gif)
+		url(../images/footer-sprite.gif)
 		no-repeat;
 }
 
@@ -7990,7 +7990,7 @@ a.litb-btn:hover {
 
 .w-cateNav a.levelUp {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		-17px -84px no-repeat;
 }
 
@@ -8050,7 +8050,7 @@ a.litb-btn:hover {
 
 .w-mini-featured-category-withsub span {
 	background:
-		url(http://cloud7.lbox.me/resource_100313/dev_v2/themes/default/images/list-right-arrow.gif)
+		url(../images/list-right-arrow.gif)
 		no-repeat scroll 0 0 transparent;
 }
 
@@ -8074,13 +8074,13 @@ a.litb-btn:hover {
 
 .w-cate-featured-reviews .reviewContent {
 	background:
-		url(http://cloud4.lbox.me/resource_100313/dev_v2/themes/default/images/quote-left.png)
+		url(../images/quote-left.png)
 		no-repeat left top;
 }
 
 .w-cate-featured-reviews .reviewInfo {
 	background:
-		url(http://cloud5.lbox.me/resource_100313/dev_v2/themes/default/images/quote-right.png)
+		url(../images/quote-right.png)
 		no-repeat right bottom;
 }
 
@@ -8100,7 +8100,7 @@ a.litb-btn:hover {
 
 .w-grid-752-4cols .featuredProduct dt {
 	background:
-		url(http://cloud6.lbox.me/resource_100313/dev_v2/themes/default/images/gallery_featured_prod_seperator.png)
+		url(../images/gallery_featured_prod_seperator.png)
 		no-repeat right bottom;
 	height: 178px;
 	margin-bottom: 2px;
@@ -8109,7 +8109,7 @@ a.litb-btn:hover {
 .w-grid-752-4cols dl.featuredProduct .featuredBot {
 	background-color: #ddd;
 	background:
-		url(http://cloud7.lbox.me/resource_100313/dev_v2/themes/default/images/gallery_featured_prod_bg.png)
+		url(../images/gallery_featured_prod_bg.png)
 		no-repeat right bottom;
 }
 
@@ -8119,7 +8119,7 @@ a.litb-btn:hover {
 
 .w-list-752 dl.featuredProduct .featuredBot {
 	background:
-		url(http://cloud8.lbox.me/resource_100313/dev_v2/themes/default/images/list_featured_prod_seperator.png);
+		url(../images/list_featured_prod_seperator.png);
 }
 
 .w-grid-752-4cols dd .prodViewMore a {
@@ -8132,13 +8132,13 @@ a.litb-btn:hover {
 
 .w-grid-752-3cols dl.featuredProduct .featuredBot {
 	background:
-		url(http://cloud1.lbox.me/resource_100313/dev_v2/themes/default/images/gallery_featured_prod_bg_240.png)
+		url(../images/gallery_featured_prod_bg_240.png)
 		no-repeat right bottom;
 }
 
 .prodType a.priceUp,.prodType a.priceDown {
 	background-image:
-		url(http://cloud2.lbox.me/resource_100313/dev_v2/themes/default/images/arrow.png);
+		url(../images/arrow.png);
 	background-repeat: no-repeat;
 }
 
@@ -8161,20 +8161,20 @@ a.litb-btn:hover {
 
 .w-richRefinement h2 span {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		no-repeat -100px -75px;
 }
 
 .w-richRefinement p a:link,.w-richRefinement p a:visited {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		no-repeat scroll -180px 5px transparent;
 	color: #333333;
 }
 
 .w-richRefinement p a:hover,.w-richRefinement p a:active {
 	background: #ffddd8
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		no-repeat -140px -35px;
 	color: #333333;
 }
@@ -8226,7 +8226,7 @@ a.litb-btn:hover {
 
 .w-ns3c dl dd a,.w-ns3c dl dd a.visited,.w-ns3c dl dd a.show {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		no-repeat scroll -180px 4px transparent;
 	color: #333333;
 }
@@ -8263,7 +8263,7 @@ a.litb-btn:hover {
 
 .w-ns3c .otherOptions .optBtn span {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		no-repeat scroll transparent;
 }
 
@@ -8277,14 +8277,14 @@ a.litb-btn:hover {
 
 .w-cateNav .levelUp a {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/resource/themes/newblue/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		no-repeat scroll -60px -113px transparent;
 	padding-left: 8px;
 }
 
 .w-cateNav .levelUp a:hover {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/resource/themes/newblue/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		no-repeat scroll -60px -113px #dbf3ff;
 	padding-left: 8px;
 }
@@ -8332,14 +8332,14 @@ a.litb-btn:hover {
 
 .w-cateNav .levelUp a {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		no-repeat scroll -60px -113px transparent;
 	padding-left: 8px;
 }
 
 .w-cateNav .levelUp a:hover {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/themes/default/images/cate-nav.gif)
+		url(../images/cate-nav.gif)
 		no-repeat scroll -60px -113px #ffddd8;
 	padding-left: 8px;
 }
@@ -8390,7 +8390,7 @@ a.litb-btn:hover {
 
 .site_map dl a.sub_cate {
 	background:
-		url(http://cloud7.lbox.me/resource_100313/dev_v2/themes/default/images/list-right-arrow.gif)
+		url(../images/list-right-arrow.gif)
 		no-repeat scroll 1px 9px transparent;
 }
 
@@ -8402,7 +8402,7 @@ a.litb-btn:hover {
 
 .popCountry,.popCountry a {
 	background:
-		url(http://cloud4.lbox.me/resource_100313/dev_v2/themes/default/images/popup-headder-bg.png)
+		url(../images/popup-headder-bg.png)
 		no-repeat 0 0 transparent;
 }
 
@@ -8454,7 +8454,7 @@ a.litb-btn:hover {
 #group-pro-main dt,#group-pro-main dd,.endSoonList>li>div .iconGroupSoldOut,.endSoonList>li>div .iconGroupSoldOut i
 	{
 	background-image:
-		url(http://cloud5.lbox.me/resource_100313/dev_v2/themes/default/images/group_sprite_new_lang.png);
+		url(../images/group_sprite_new_lang.png);
 	background-repeat: no-repeat;
 }
 
@@ -8597,14 +8597,14 @@ a.blue-gray:hover {
 .w-grid-752-4cols-ns dt a .prod-category,.w-grid-752-4cols-high-ns dt a .prod-category
 	{
 	background:
-		url(http://cloud6.lbox.me/resource_100313/dev_v2/themes/default/images/ns-entrance-bg.png)
+		url(../images/ns-entrance-bg.png)
 		top center no-repeat;
 }
 
 .w-grid-752-4cols-ns dt a:hover .prod-category,.w-grid-752-4cols-high-ns dt a:hover .prod-category
 	{
 	background:
-		url(http://cloud7.lbox.me/resource_100313/dev_v2/themes/default/images/ns-entrance-bg-hover.png)
+		url(../images/ns-entrance-bg-hover.png)
 		top center no-repeat;
 }
 
@@ -8626,27 +8626,27 @@ a.blue-gray:hover {
 
 .n_s_t {
 	background:
-		url(http://cloud8.lbox.me/resource_100313/dev_v2/langs/en/newsletter.gif)
+		url(../images/newsletter.gif)
 		no-repeat;
 }
 
 .w-productList dt a em,.iconVideoDemo,.iconNew,.iconPersonalize,.iconFreeGift,.iconSpecialOffer,.mini-icon,.iconExpress,.iconXmas,.iconFastDelivery,.iconAdvertised,.iconClearance
 	{
 	background-image:
-		url(http://cloud1.lbox.me/resource_100313/dev_v2/langs/en/newblue_lang.png);
+		url(../images/newblue_lang.png);
 	background-repeat: no-repeat;
 }
 
 .w-proAttention,.w-joinUsProgram a,.w-evidence h4,.w-translatePage,.w-wordsOfUser h2
 	{
 	background-image:
-		url(http://cloud2.lbox.me/resource_100313/dev_v2/langs/en/side.jpg);
+		url(../images/side.jpg);
 	background-repeat: no-repeat;
 }
 
 .w-reviewForm textarea {
 	background:
-		url(http://cloud3.lbox.me/resource_100313/dev_v2/langs/en/review_win_bg.jpg)
+		url(../images/review_win_bg.jpg)
 		0 0 no-repeat;
 }
 
@@ -8939,14 +8939,14 @@ a.blue-gray:hover {
 .w-partners a,.w-partners span,.w-whyBuyFromUs h4 span,#joinOurCommunity a
 	{
 	background-image:
-		url(http://cloud4.lbox.me/resource_100313/dev_v2/langs/en/footer.png);
+		url(../images/footer.png);
 	background-repeat: no-repeat;
 	text-indent: -9999px;
 }
 
 #newsLetter h3 {
 	background:
-		url(http://cloud4.lbox.me/resource_100313/dev_v2/langs/en/footer.png)
+		url(../images/footer.png)
 		-208px -224px no-repeat;
 }
 
@@ -8984,7 +8984,7 @@ a.blue-gray:hover {
 
 .litb-btn,.litb-btn span {
 	background:
-		url(http://cloud5.lbox.me/resource_100313/dev_v2/langs/en/newblue_buttons.png);
+		url(../images/newblue_buttons.png);
 }
 
 .ir {
@@ -9310,14 +9310,14 @@ a:hover .placeOrderBtn {
 
 .reviewLabel {
 	background:
-		url(http://cloud6.lbox.me/resource_100313/dev_v2/langs/en/bag.gif);
+		url(../images/bag.gif);
 	width: 155px;
 	height: 155px;
 }
 
 #topControl {
 	background:
-		url(http://cloud1.lbox.me/resource_100313/dev_v2/langs/en/newblue_lang.png)
+		url(../images/newblue_lang.png)
 		-500px -105px no-repeat;
 	height: 85px;
 }
@@ -9377,7 +9377,7 @@ a:hover .placeOrderBtn {
 .litb-group-btn,.litb-group-link,.iconRightSoldOut em,.iconRightSoldOutMini em
 	{
 	background-image:
-		url(http://cloud7.lbox.me/resource_100313/dev_v2/langs/en/group_lang.png);
+		url(../images/group_lang.png);
 	background-repeat: no-repeat;
 }
 
@@ -9477,7 +9477,7 @@ a.iconWiewIt:hover {
 .size-title-tplA,.plus-size-title-tplA,.packaging-title-tplA,.size-title-tplB,.plus-size-title-tplB,.packaging-title-tplB
 	{
 	background-image:
-		url(http://cloud8.lbox.me/resource_100313/dev_v2/langs/en/description_dress_tplA_tit.jpg);
+		url(../images/description_dress_tplA_tit.jpg);
 }
 
 .w-relatedSearch {
@@ -9501,14 +9501,14 @@ a.iconWiewIt:hover {
 .w-grid-752-4cols dl.featuredProduct,.w-list-752 dl.featuredProduct,.w-grid-752-3cols dl.featuredProduct,.w-grid-992i-6cols dl.featuredProduct
 	{
 	background-image:
-		url(http://cloud1.lbox.me/resource_100313/dev_v2/langs/en/featured_v2.gif);
+		url(../images/featured_v2.gif);
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
 
 .w-seo-mod .trustful-words i {
 	background:
-		url(http://cloud2.lbox.me/resource_100313/dev_v2/langs/en/trustful.jpg)
+		url(../images/trustful.jpg)
 		no-repeat;
 }
 
