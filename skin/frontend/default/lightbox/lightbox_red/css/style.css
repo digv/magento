@@ -2341,3 +2341,13 @@ background: url("../images/home-slide-thumb-bg.png") no-repeat scroll 0 -12px tr
     text-indent: -10000px;
 
 }
+
+.slidercontrol a.active {
+    background-position: 0 0;
+}
+
+.slidercontrolwr {
+    margin: 280px 230px;
+    position: absolute;
+    width: 100%;
+}
