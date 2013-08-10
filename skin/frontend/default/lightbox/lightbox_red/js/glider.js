@@ -52,6 +52,8 @@ Object.extend(Object.extend(Glider.prototype, Abstract.prototype), {
   },
 
   moveTo: function(element, container, options) {
+	  $j('div.sectionslide').hide ();
+	  $j (element).show ();
     this.current = $(element);
     Position.prepare();
     var containerOffset = Position.cumulativeOffset(container);
