@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- catalog conf -->
+
+<layout version="0.1.0">
+<default>
+
+    <!-- dropdown menu -->
+    <reference name="top.menu">
+            <block type="catalog/navigation" name="catalog.sidenav" template="catalog/navigation/top.phtml"/>
+    </reference>
+        
+</default>
+
+</layout>
