@@ -2322,3 +2322,22 @@ a.favorEntry:hover {
 	
 	display:none;
 }
+
+.slidercontrol a{
+background: url("../images/home-slide-thumb-bg.png") no-repeat scroll 0 -12px transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 12px;
+    margin: 0 6px;
+    width: 12px;
+	font-weight: bold;
+	line-height: 1.25em;
+    margin: 0 1px;
+    overflow: hidden;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    text-indent: -10000px;
+
+}
