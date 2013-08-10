@@ -16,18 +16,8 @@
 	
 	<div id="mainNav" class="widget w-mainNav">
 		
-		<div class="allCates navSp">
-			<dl>
-				<dt>
-					<a class="linkAllCate" href="http://www.lightinthebox.com/see-all.html">所有商品分类 </a>
-				</dt>
-			</dl>
-			
-			<dd id="litb-cate-menu" class="litb-cate-menu ctrInfo ctrTrackA" style="display:block;" page="index" ctr="{area:'category_menu'}">
-			
-			</dd>
-		</div>
-			
+		<?php echo $this->getChildHtml('topSearch'); ?>
+		
 		<div class="mainSearch navSp">
 				
 			<?php echo $this->getChildHtml('topSearch'); ?>
