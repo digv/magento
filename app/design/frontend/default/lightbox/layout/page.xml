@@ -13,7 +13,7 @@ Default layout, loads most of the pages
                 <action method="addCss"><stylesheet>css/lightbox_skin.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/style.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/menu_cat.css</stylesheet></action>
-                <action method="addJs"><type>skinJs</type><script>js/jquery-1.10.2.min.js</script></action>
+                <action method="addJs"><type>lightbox_red</type><script>js/jquery-1.10.2.min.js</script></action>
             </block>
 
             <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
