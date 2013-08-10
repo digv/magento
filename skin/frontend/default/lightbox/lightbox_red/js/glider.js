@@ -21,7 +21,7 @@ Object.extend(Object.extend(Glider.prototype, Abstract.prototype), {
 
 	    this.addObservers();
         if(this.options.initialSection) {
-        	$j('div#'+this.options.initialSection+ '.sectionslide').show ();
+        	$j ('div#' + this.options.initialSection + '.sectionslide').show ();
             this.moveTo(this.options.initialSection, this.scroller, { duration:this.options.duration });  // initialSection should be the id of the section you want to show up on load
             
         }
@@ -55,9 +55,11 @@ Object.extend(Object.extend(Glider.prototype, Abstract.prototype), {
   },
 
   moveTo: function(element, container, options) {
-	  $j('div.sectionslide').hide ();
-	 var t =  $j(element);
-	  $j (element).show ();
+	  
+	  if ($j(element).length) {
+		  $j('div.sectionslide').hide ();
+		  $j (element).show ();
+	  }
     this.current = $(element);
     Position.prepare();
     var containerOffset = Position.cumulativeOffset(container);
