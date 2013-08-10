@@ -1,0 +1,219 @@
+.litb-cate-menu-specialoffer {
+    background-color: #F7F7F7;
+    border-left: 1px solid #E7E6E3;
+    line-height: 100%;
+    margin-bottom: -3010px;
+    padding: 5px 16px 3020px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 142px;
+}
+.litb-cate-menu-specialoffer dl {
+    margin: 6px 0 13px;
+}
+.litb-cate-menu-specialoffer dt {
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    line-height: 18px;
+    padding: 1px 0 6px;
+    text-indent: 0;
+    text-shadow: none;
+}
+.litb-cate-menu-specialoffer dd {
+    font-size: 13px;
+    line-height: 14px;
+    padding: 3px 0;
+}
+.litb-cate-menu-specialoffer .red {
+    color: #990000;
+}
+.cate-menu-sub {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-left: 1px solid #CCCCCC;
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.1) inset;
+    left: 0;
+    margin-bottom: -3010px;
+    overflow: hidden;
+    padding: 4px 0 3020px 32px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.cate-menu-sub .red {
+    color: #990000;
+}
+.cate-menu-sub dl {
+    display: block;
+    float: left;
+    margin: 7px 16px 0 0;
+    padding-bottom: 7px;
+    width: 160px;
+}
+.cate-menu-sub dl.bottop {
+    border-top: 1px solid #E7E6E3;
+    margin-top: 0;
+    padding-bottom: 20px;
+    padding-top: 7px;
+}
+.cate-menu-sub dt {
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    line-height: 18px;
+    padding: 1px 0 6px;
+    text-indent: 0;
+    text-shadow: none;
+}
+.cate-menu-sub dd {
+    font-size: 13px;
+    line-height: 14px;
+    padding: 3px 0;
+}
+.cate-menu-sub dt h3 {
+    margin: 0;
+    padding: 0;
+}
+.cate-menu-sub dd h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.cate_menu_hero {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin-bottom: -3010px;
+    overflow: hidden;
+    padding: 4px 28px 3020px 4px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px;
+}
+.cate_menu_hero .red {
+    color: #990000;
+}
+.cate_menu_hero dl {
+    display: block;
+    float: left;
+    margin: 7px 16px 0 0;
+    padding-bottom: 7px;
+    width: 160px;
+}
+.cate_menu_hero dl.bottop {
+    border-top: 1px solid #E7E6E3;
+    margin-top: 0;
+    padding-bottom: 20px;
+    padding-top: 7px;
+}
+.cate_menu_hero dt {
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    line-height: 18px;
+    padding: 1px 0 6px;
+    text-indent: 0;
+    text-shadow: none;
+}
+.cate_menu_hero dd {
+    font-size: 13px;
+    line-height: 14px;
+    padding: 3px 0;
+}
+.cate_menu_hero_left {
+    background-clip: padding-box;
+    border-left: 1px solid #CCCCCC;
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.1) inset;
+    padding: 4px 24px 3020px 33px;
+}
+.cate_menu_hero dt h3 {
+    margin: 0;
+    padding: 0;
+}
+.cate_menu_hero dd h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.cate-menu {
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    width: 238px;
+}
+.cate-menu-out {
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    margin-bottom: -3010px;
+    padding: 0 0 3010px;
+    position: relative;
+    width: 576px;
+}
+.cate-menu-out .cate-menu-sub {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.cate-menu .cate-menu-in {
+    background-color: #FFFFFF;
+    display: none;
+    left: 238px;
+    position: absolute;
+    top: 0;
+}
+.cate-menu h2 {
+    padding: 0;
+}
+.cate-menu h2 a {
+    border-style: solid;
+    border-width: 1px 0;
+    display: block;
+    font-family: "Helvetica Neue",arial,sans-serif;
+    font-size: 13px;
+    height: 20px;
+    line-height: 19px;
+    padding: 3px 14px;
+    position: relative;
+    white-space: nowrap;
+    width: 210px;
+}
+.cate-menu .cate-menu-out:last-child h2 a, .cate-menu .cate-menu-out.last h2 a {
+    border-bottom: medium none;
+}
+.cate-menu h2 a:hover {
+    text-decoration: none;
+}
+.cate-menu h2 a span {
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 5px;
+}
+.cate-menu h2 a em {
+    border-color: #FFFFFF #FFFFFF #FFFFFF #BDBDBD;
+    border-style: solid;
+    border-width: 6px;
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 4px;
+    top: 8px;
+}
+.cate-menu .clear {
+    clear: left;
+}
+#litb-cate-menu {
+    background-clip: padding-box;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    display: none;
+    font-family: "Helvetica Neue",arial,sans-serif;
+    margin-top: -1px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 50;
+}
+#litb-cate-menu.hover {
+    box-shadow: 0 0 0 transparent;
+}
