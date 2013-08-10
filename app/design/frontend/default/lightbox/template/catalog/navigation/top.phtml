@@ -23,7 +23,17 @@
 			
 			<?php 
 				foreach ($_categories as $_category) {
-					var_dump($_category->getId(), $_category->getName());
+					
+					print '<div class="cate-menu-out" style="width: 990px;">';
+					
+					print '<h2>';
+					
+					print '<a href="'. Mage::getSingleton('catalog/category') -> getCategoryUrl ($_category). '">';
+					print $_category->getName();
+					print '</a>';
+					print '</h2>';
+					print '</div>';
+					//var_dump($_category->getId(), $_category->getName());
 				}
 			
 			?>
