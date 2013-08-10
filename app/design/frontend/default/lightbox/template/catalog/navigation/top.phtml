@@ -29,10 +29,39 @@
 					
 					print '<a href="'. $this-> getCategoryUrl ($_category). '">';
 					print $_category->getName();
+					print '<em></em>';
 					print '</a>';
+					
 					print '</h2>';
+					
+					//child categories;
+					
+					$childCats = $this -> getCurrentChildCategories($_category);
+					
+					print '<div class="cate-menu-in" style="width: 750px; top: 0px; display: block; z-index: 50;">';
+					
+					print '<div class="cate-menu-sub">';
+					foreach ($childCats as $childCat) {
+
+						print '<dl>';
+						
+						print '<dt>';
+						
+						print '<h3>';
+						print '<a href="'. $this-> getCategoryUrl ($childCat). '">';
+						print $childCat ->getName();
+						print '</a>';
+						print '</h3>';
+						
+						print '</dt>';
+						
+						print '</dl>';
+
+					}
 					print '</div>';
-					//var_dump($_category->getId(), $_category->getName());
+					print '</div>';
+					
+					print '</div>';
 				}
 			
 			?>
