@@ -1,61 +1,76 @@
-
+// Glider 
 Glider = Class.create();
 Object.extend(Object.extend(Glider.prototype, Abstract.prototype), {
 	initialize: function(wrapper, options){
+        this.handStopped = false;
 	    this.scrolling  = false;
 	    this.wrapper    = $(wrapper);
 	    this.scroller   = this.wrapper.down('div.scroller');
 	    this.sections   = this.wrapper.getElementsBySelector('div.sectionslide');
-	    this.options    = Object.extend({ controlsEvent:'click', duration: 1.0, frequency: 3 }, options || {});
+	    this.options    = Object.extend({ duration: 1.0, frequency: 3 }, options || {});
 
 	    this.sections.each( function(section, index) {
 	      section._index = index;
 	    });    
 
 	    this.events = {
-	      click: this.click.bind(this)
+	      click: this.click.bind(this),
+          mouseover: this.pause.bind(this),
+          mouseout: this.resume.bind(this)
 	    };
 
 	    this.addObservers();
-			if(this.options.initialSection) this.moveTo(this.options.initialSection, this.scroller, { duration:this.options.duration });  // initialSection should be the id of the section you want to show up on load
-			if(this.options.autoGlide) this.start();
+        if(this.options.initialSection) 
+            this.moveTo(this.options.initialSection, this.scroller, { duration:this.options.duration });  // initialSection should be the id of the section you want to show up on load
+        if(this.options.autoGlide) 
+            this.start();
 	  },
 	
   addObservers: function() {
-		this.controls = this.wrapper.getElementsBySelector('.controls a');
-		this.controls.invoke('observe', this.options.controlsEvent, this.events.click);
-  },	
-
-  click: function(event) {
-		this.stop();
-    var element = Event.findElement(event, 'a');
-    if (this.scrolling) this.scrolling.cancel();
+    this.wrapper.observe('mouseover', this.events.mouseover);
+    this.wrapper.observe('mouseout', this.events.mouseout);
     
-		moveTo = this.wrapper.down('#'+element.href.split("#")[1])
-    this.moveTo(moveTo, this.scroller, { duration:this.options.duration });     
-    Event.stop(event);
+    var descriptions = this.wrapper.getElementsBySelector('div.sliderdescription');
+    descriptions.invoke('observe', 'mouseover', this.makeActive);
+    descriptions.invoke('observe', 'mouseout', this.makeInactive);
+    
+    var controls = this.wrapper.getElementsBySelector('div.slidercontrol a');
+    controls.invoke('observe', 'mouseover', this.events.click);
 
-		this.controls.each(function(control){
-			if (control == element) {
-				control.addClassName("active")
-			}else{
-				control.removeClassName("active")
-			}			
-		});
   },
 
-	moveTo: function(element, container, options){
-			this.current = $(element);
+  click: function(event) {
+    var element = Event.findElement(event, 'a');
+    
+    if (this.scrolling) this.scrolling.cancel();
+    this.moveTo(element.href.split("#")[1], this.scroller, { duration:this.options.duration });  
+     if (!this.handStopped) {
+        clearTimeout(this.timer);
+        this.timer = null;
+      }
+    Event.stop(event);
+  },
 
-			Position.prepare();
-	    var containerOffset = Position.cumulativeOffset(container),
-	     elementOffset = Position.cumulativeOffset($(element));
+  moveTo: function(element, container, options) {
+    this.current = $(element);
+    Position.prepare();
+    var containerOffset = Position.cumulativeOffset(container);
+    var elementOffset = Position.cumulativeOffset(this.current);
 
-		  this.scrolling 	= new Effect.SmoothScroll(container, 
-				{duration:options.duration, x:(elementOffset[0]-containerOffset[0]), y:(elementOffset[1]-containerOffset[1])});
-		  return false;
-		},
-		
+    this.scrolling = new Effect.SmoothScroll(container, {
+      duration:options.duration, 
+      x:(elementOffset[0]-containerOffset[0]), 
+      y:(elementOffset[1]-containerOffset[1])
+    });
+    
+    if (typeof element == 'object')
+        element = element.id;
+        
+    this.toggleControl($$('a[href="#'+element+'"]')[0]);
+    
+    return false;
+  },
+        
   next: function(){
     if (this.current) {
       var currentIndex = this.current._index;
@@ -65,6 +80,7 @@ Object.extend(Object.extend(Glider.prototype, Abstract.prototype), {
     this.moveTo(this.sections[nextIndex], this.scroller, { 
       duration: this.options.duration
     });
+
   },
 	
   previous: function(){
@@ -78,16 +94,50 @@ Object.extend(Object.extend(Glider.prototype, Abstract.prototype), {
       duration: this.options.duration
     });
   },
+  
+  makeActive: function(event)
+  {
+    var element = Event.findElement(event, 'div');
+    element.addClassName('active');
+  },
+  
+  makeInactive: function(event)
+  {
+    var element = Event.findElement(event, 'div');
+    element.removeClassName('active');
+  },
+  
+  toggleControl: function(el)
+  {
+    $$('.slidercontrol a').invoke('removeClassName', 'active');
+    el.addClassName('active');
+  },
 
 	stop: function()
 	{
+        this.handStopped = true;
 		clearTimeout(this.timer);
 	},
 	
 	start: function()
 	{
+        this.handStopped = false;
 		this.periodicallyUpdate();
 	},
+    
+    pause: function()
+    {
+      if (!this.handStopped) {
+        clearTimeout(this.timer);
+        this.timer = null;
+      }
+    },
+    
+    resume: function()
+    {
+      if (!this.handStopped)
+        this.periodicallyUpdate();
+    },
 		
 	periodicallyUpdate: function()
 	{ 
@@ -131,3 +181,5 @@ Object.extend(Object.extend(Effect.SmoothScroll.prototype, Effect.Base.prototype
     this.element.scrollTop  = this.options.y * position + this.originalTop;
   }
 });
+
+// End of Glider
