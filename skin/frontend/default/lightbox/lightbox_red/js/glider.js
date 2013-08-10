@@ -5,7 +5,7 @@ Object.extend(Object.extend(Glider.prototype, Abstract.prototype), {
 	    this.scrolling  = false;
 	    this.wrapper    = $(wrapper);
 	    this.scroller   = this.wrapper.down('div.scroller');
-	    this.sections   = this.wrapper.getElementsBySelector('div.section');
+	    this.sections   = this.wrapper.getElementsBySelector('div.sectionslide');
 	    this.options    = Object.extend({ controlsEvent:'click', duration: 1.0, frequency: 3 }, options || {});
 
 	    this.sections.each( function(section, index) {
