@@ -20,7 +20,8 @@
 			
 			<?php if(count($_categories)): ?>
 			
-			<?php 
+			<?php
+				$m = 0; 
 				foreach ($_categories as $_category) {
 					
 					print '<div class="cate-menu-out" style="width: 990px;">';
@@ -38,7 +39,7 @@
 					
 					$childCats = $_category -> getChildren();
 					
-					print '<div class="cate-menu-in" style="width: 750px; top: 0px; display:none; z-index: 50;">';
+					print '<div class="cate-menu-in" style="width: 750px; top: '.($m * 28 ).'px; display:none; z-index: 50;">';
 					
 					print '<div class="cate-menu-sub">';
 					foreach ($childCats as $childCat) {
@@ -62,6 +63,8 @@
 					print '</div>';
 					
 					print '</div>';
+					
+					$m ++;
 				}
 			
 			?>
