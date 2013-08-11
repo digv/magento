@@ -21,7 +21,6 @@ Default layout, loads most of the pages
                 <action method="addCss"><stylesheet>css/style.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/menu_cat.css</stylesheet></action>
                 <action method="addItem"><type>skin_js</type><name>js/jquery-1.10.2.min.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/cat-menu.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/glider.js</name></action>
             </block>
 
@@ -30,6 +29,9 @@ Default layout, loads most of the pages
             </block>
             
             <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
+            
+                    <action method="addItem"><type>skin_js</type><name>js/cat-menu.js</name></action>
+                    
                     <label>Navigation Bar</label>
             </block>
             
