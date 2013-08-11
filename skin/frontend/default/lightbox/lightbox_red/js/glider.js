@@ -56,12 +56,12 @@ Object.extend(Object.extend(Glider.prototype, Abstract.prototype), {
 
   moveTo: function(element, container, options) {
 	  
-	  $j('div.sectionslide').hide ();
+	  $j('div.sectionslide').hide ('fade');
 	  
 	  if (typeof element !== 'object') {
 		  $j ('div#' + element + '.sectionslide').show ();
 	  } else {
-		  $j (element).show ();
+		  $j (element).show ('fade');
 	  }
     this.current = $(element);
     Position.prepare();
