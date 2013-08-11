@@ -1,6 +1,6 @@
 $j (function () {
 	
-	$j('.cate-menu-out').hover (
+	$j('.cate-menu').hover (
 		
 			menuMouseOver,
 			
@@ -13,12 +13,22 @@ $j (function () {
 
 
 function menuMouseOver () {
-	$j ('.cate-menu'). css ('width', '990px');
-	$j(this).children ('.cate-menu-in').show ('slide');
+	$j (this). animate({width:'+=752px'}, 200);
+	$j(this).children ('.cate-menu-out').hover (submenuMouseOver, submenuMouseOut)
 	
 }
 
 function menuMouseOut () {
-	$j ('.cate-menu'). css ('width', '238px');
-	$j(this).children ('.cate-menu-in').hide ();
+	$j (this). css ('width', '238px');
+}
+
+function submenuMouseOver () {
+	$j(this).prev('h2').find('em').css('display', 'inline');
+	$j(this).children ('.cate-menu-in').show ();
+	
+}
+
+function submenuMouseOut () {
+	$j(this).prev('h2').find('em').css('display', 'none');
+	$j(this).children ('.cate-menu-in').hide();
 }
