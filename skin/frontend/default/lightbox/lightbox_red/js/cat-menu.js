@@ -1,37 +1,36 @@
-$j (function () {
-	
-	$j('.cate-menu').hover (
-		
-			menuMouseOver,
-			
-			menuMouseOut
-	)
-	
-	$j('.cate-menu-out').hover (submenuMouseOver, submenuMouseOut);
-	
+$j(function() {
+
+	$j('.cate-menu-out').hover(submenuMouseOver, submenuMouseOut);
+	$j('.cate-menu').hover(menuMouseOver, menuMouseOut);
 }
-		
+
 )
 
+function menuMouseOver() {
+	if ($j('.cate-menu-out:hover').length > 0) {
+		if ($j(this).css('width') != '238px') {
+			$j(this).css('width', '238px');
+		}
+		$j(this).stop(true, true).animate({
+			width : '+990px'
+		}, 200);
 
-function menuMouseOver () {
-	if($j (this).css('width') != '238px') {
-		$j (this). css ('width', '238px');
 	}
-	$j (this). animate({width:'+=752px'}, 200);
+
 }
 
-function menuMouseOut () {
-	$j (this). css ('width', '238px');
+function menuMouseOut() {
+	$j(this).stop(true, true);
+	$j(this).css('width', '238px');
 }
 
-function submenuMouseOver () {
+function submenuMouseOver() {
 	$j(this).find('em').css('display', 'inline');
-	$j(this).children ('.cate-menu-in').show ();
-	
+	$j(this).children('.cate-menu-in').show();
+
 }
 
-function submenuMouseOut () {
+function submenuMouseOut() {
 	$j(this).find('em').css('display', 'none');
-	$j(this).children ('.cate-menu-in').hide();
+	$j(this).children('.cate-menu-in').hide();
 }
