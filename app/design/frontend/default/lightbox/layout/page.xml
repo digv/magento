@@ -30,8 +30,6 @@ Default layout, loads most of the pages
             
             <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
             
-                    <action method="addItem"><type>skin_js</type><name>js/cat-menu.js</name></action>
-                    
                     <label>Navigation Bar</label>
             </block>
             
