@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Lightbox_Product>
+            <version>1.6.0.0</version>
+        </Lightbox_Product>
+    </modules>
+    <global>
+        <models>
+            <product>
+                <class>Lightbox_Product_Model</class>
+            </product>
+        </models>
+        <blocks>
+            <product>
+                <class>Lightbox_Product_Block</class>
+            </product>
+        </blocks>
+    </global>
+</config>

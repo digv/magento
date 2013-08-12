@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Lightbox_Product>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Lightbox_Product>
+    </modules>
+</config>
