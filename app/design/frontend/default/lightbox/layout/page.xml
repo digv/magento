@@ -34,6 +34,7 @@ Default layout, loads most of the pages
             </block>
             
             <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+            <block type="product/latest" name="product.latest" as="productLatest" template="product/latest/latest.phtml"/>
             <block type="core/template" name="img.carousel" as="imgCarousel" template="page/html/carousel.phtml"/>
             <block type="page/html_header" name="header" as="header">
 
