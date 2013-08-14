@@ -1,0 +1,26 @@
+<div id="recProdsHeading"
+	class="clearfix page-heading w-recommend-products-heading"><a
+	class="heading-title title-tab" href="">最新上架</a></div>
+
+<div id="recProds">
+	<div class="widget w-mini-cateEntryProdList">
+		<div
+			class="widget w-productList w-grid w-grid-752-5cols w-mini-productList w-mini-reletedProdGrid">
+			
+			<?php $_products = $this->getProductCollection();?>
+			
+			<?php foreach ($_products->getItems() as $_product): ?>
+			
+			<dl>
+			
+				<dt>
+					<a width="155" height="120" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>)">
+					<img class="lazy" data-original="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(128,128) ?>"  src="<?php echo $this->getSkinUrl('images/loader.gif'); ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" /></a>
+				</dt>
+			</dl>
+			<?php if($i>1) {break;} ?>
+			<?php $i++; endforeach; ?>
+			
+		</div>
+	</div>
+</div>
