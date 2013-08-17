@@ -5,15 +5,4 @@ class Lightbox_Product_Block_Product_Latest extends Lightbox_Product_Block_Produ
     protected $_priceSuffix = '-latest';
     protected $_className = 'bmproducts-latest';
     
-    protected function _beforeToHtml()
-    {
-        $collection = $this->getCollection('bmproducts/reports_product_collection')
-
-            ->addAttributeToSelect('updated_at')
-            ->setOrder('updated_at', 'desc');
-        
-        $this->setProductCollection($collection);
-
-        return parent::_beforeToHtml();
-    } 
 }

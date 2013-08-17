@@ -10,7 +10,7 @@ const DEFAULT_PRODUCTS_COUNT = 6;
     protected $_priceFilter = array();
     protected $_addBundlePriceBlock = true;
     
-    public function getCollection($collection = 'bmproducts/catalog_product_collection')
+    public function getCollection($collection = 'catalog/catalog_product_collection')
     {
         if (!$collection instanceof Mage_Catalog_Model_Resource_Eav_Mysql4_Product_Collection) {
             $collection = Mage::getResourceModel($collection);
