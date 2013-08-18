@@ -21,8 +21,15 @@
 				<dd class="prodName">
 					<a  href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>)">
 						<?php echo $_product->getName(); ?>
-						<?php var_dump(get_class_methods($_product)); ?>
 					</a>
+				</dd>
+				<dd class="prodPrice">
+					<a  class="price" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>)">
+						<?php echo $_product->getPrice(); ?>
+					</a>
+				</dd>
+				<dd class="prodReview">
+				
 				</dd>
 			</dl>
 			<?php if($i>8) {break;} ?>
