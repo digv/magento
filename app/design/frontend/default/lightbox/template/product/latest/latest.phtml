@@ -19,7 +19,7 @@
 					<img class="lazy"  src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135) ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" /></a>
 				</dt>
 			</dl>
-			<?php if($i>1) {break;} ?>
+			<?php if($i>4) {break;} ?>
 			<?php $i++; endforeach; ?>
 			
 		</div>

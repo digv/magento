@@ -8,8 +8,6 @@ class Lightbox_Product_Block_Product_Latest extends Lightbox_Product_Block_Produ
     protected function _beforeToHtml() {
 		$collection = $this->getCollection ( 'reports/product_collection' )
 						-> addAttributeToSelect ( 'updated_at' )
-						//-> addAttributeToSelect ( 'name' )
-						//-> addAttributeToSelect ( 'small_image' )
 						->setOrder ( 'updated_at', 'desc' );
 		
 						//var_dump((string) $collection -> getSelect());
