@@ -11,7 +11,7 @@ class Lightbox_Product_Block_Product_Latest extends Lightbox_Product_Block_Produ
 						-> addAttributeToSelect ( 'name' )
 						->setOrder ( 'updated_at', 'desc' );
 		
-						var_dump((string) $collection -> getSelect());
+						//var_dump((string) $collection -> getSelect());
 		$this->setProductCollection ( $collection );
 		
 		return parent::_beforeToHtml ();
