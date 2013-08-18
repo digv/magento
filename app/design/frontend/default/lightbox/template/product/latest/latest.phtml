@@ -15,11 +15,11 @@
 			<dl>
 			
 				<dt>
-					<a width="155" height="120" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>)">
-					<img class="lazy"  src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135) ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" /></a>
+					<a width="128" height="128" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>)">
+					<img class="lazy"  src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(128,128) ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" /></a>
 				</dt>
 			</dl>
-			<?php if($i>4) {break;} ?>
+			<?php if($i>8) {break;} ?>
 			<?php $i++; endforeach; ?>
 			
 		</div>
