@@ -39,6 +39,16 @@ Whoops, it looks like you have an invalid PHP version.</h3></div><p>Magento supp
  */
 error_reporting(E_ALL | E_STRICT);
 
+/*
+ * xhprof conf start
+ */
+
+if (extension_loaded('xhprof') && isset($_GET['xhdebug'])) {
+    include_once '/usr/share/php/xhprof_lib/utils/xhprof_lib.php';
+    include_once '/usr/share/php/xhprof_lib/utils/xhprof_runs.php';
+    xhprof_enable(XHPROF_FLAGS_CPU + XHPROF_FLAGS_MEMORY);
+}
+
 /**
  * Compilation includes configuration file
  */
@@ -85,3 +95,16 @@ $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : ''
 $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
 
 Mage::run($mageRunCode, $mageRunType);
+
+/*
+ * xhprof foot config
+ */
+
+if (extension_loaded('xhprof') && isset($_GET['xhdebug'])) {
+    $profiler_namespace = 'magentodebug';  // your application's namespace
+    $xhprof_data = xhprof_disable();
+    $xhprof_runs = new XHProfRuns_Default();
+    $run_id = $xhprof_runs->save_run($xhprof_data, $profiler_namespace);
+    $profiler_url = sprintf('http://open.digv.cn:8060/xhprof_html/index.php?run=%s&source=%s', $run_id, $profiler_namespace);
+    echo '<a href="'. $profiler_url .'" target="_blank">xhprof output</a>';
+}
