@@ -5,11 +5,11 @@ class Lightbox_Product_Block_Product_Abstract extends Mage_Catalog_Block_Product
 		if (! $collection instanceof Mage_Catalog_Model_Resource_Eav_Mysql4_Product_Collection) {
 			$collection = Mage::getResourceModel ( $collection );
 		}
-		$collection = $this->_addProductAttributesAndPrices ($collection)
-							-> addAttributeToSelect ('category');
+		$collection = $this->_addProductAttributesAndPrices ($collection);
 							//$category = Mage::registry('current_category');
 							//var_dump($category -> getId(), 'zjh');
 		
 		return $collection;
 	}
 }
+  
