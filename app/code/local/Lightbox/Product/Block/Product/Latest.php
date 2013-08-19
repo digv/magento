@@ -12,7 +12,7 @@ class Lightbox_Product_Block_Product_Latest extends Lightbox_Product_Block_Produ
 						-> setPageSize('10')
 						-> setCurPage('1');
 		
-						//var_dump((string) $collection -> getSelect());
+						var_dump($collection -> getSelect()->__toString());
 		$this->setProductCollection ( $collection );
 		
 		return parent::_beforeToHtml ();
