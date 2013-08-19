@@ -11,7 +11,7 @@
 			<?php $_products = $this->getProductCollection();?>
 			
 			<?php foreach ($_products->getItems() as $_product): ?>
-			<?php  $_product->setCategoryId (current($_product-> getCategoryIds ())); ?>
+			<?php  echo $_product->getUrlPath(); ?>
 			<dl>
 				<dt>
 					<a  href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>)">
