@@ -13,7 +13,7 @@
 			<?php foreach ($_products->getItems() as $_product): ?>
 			
 			<dl>
-			
+				<?php var_dump($_product->getCategoryIds($_product))?>
 				<dt>
 					<a  href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>)">
 					<img class="lazy" width="128" height="128" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(128,128) ?>" alt="<?php echo $this->htmlEscape($_product->getName()) ?>" /></a>
