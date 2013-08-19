@@ -11,7 +11,8 @@
 			<?php $_products = $this->getProductCollection();?>
 			
 			<?php foreach ($_products->getItems() as $_product): ?>
-			<?php  echo $_product->getUrlPath(); ?>
+			<?php  $currCategory = Mage::getModel('catalog/category') -> load (current($_product -> getCategoryIds ()));?>
+			<?php Mage::register('current_category', $currCategory); ?>
 			<dl>
 				<dt>
 					<a  href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>)">
