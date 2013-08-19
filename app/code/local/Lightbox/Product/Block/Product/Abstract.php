@@ -7,8 +7,8 @@ class Lightbox_Product_Block_Product_Abstract extends Mage_Catalog_Block_Product
 		}
 		$collection = $this->_addProductAttributesAndPrices ($collection)
 							-> addAttributeToSelect ('category');
-							$category = Mage::registry('current_category');
-							var_dump($category -> getId(), 'zjh');
+							//$category = Mage::registry('current_category');
+							//var_dump($category -> getId(), 'zjh');
 		
 		return $collection;
 	}
