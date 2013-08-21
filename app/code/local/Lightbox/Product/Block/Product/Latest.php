@@ -6,7 +6,7 @@ class Lightbox_Product_Block_Product_Latest extends Lightbox_Product_Block_Produ
     protected $_className = 'bmproducts-latest';
     protected $_defaultColumnCount = 6;
     protected function _beforeToHtml() {
-		$collection = $this->getCollection ( 'reports/product_collection' )
+		$collection = $this->getCollection ( 'catalog/product_collection' )
 						-> addAttributeToSelect ( 'updated_at' )
 						->setOrder ( 'updated_at', 'desc' )
 						-> setPageSize('10')
