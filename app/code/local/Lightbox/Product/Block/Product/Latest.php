@@ -11,7 +11,7 @@ class Lightbox_Product_Block_Product_Latest extends Lightbox_Product_Block_Produ
 						->setOrder ( 'created_at', 'desc' )
 						-> setPageSize('10')
 						-> setCurPage('1');
-		
+		Mage::getModel('review/review')->appendSummary($collection);
 						var_dump($collection -> getSelect()->__toString());
 		$this->setProductCollection ( $collection );
 		
