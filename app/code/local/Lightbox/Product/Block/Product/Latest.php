@@ -7,12 +7,12 @@ class Lightbox_Product_Block_Product_Latest extends Lightbox_Product_Block_Produ
     protected $_defaultColumnCount = 6;
     protected function _beforeToHtml() {
 		$collection = $this->getCollection ( 'catalog/product_collection' )
-						//-> addAttributeToSelect ( 'updated_at' )
+						-> addAttributeToSelect ( 'rating_summary' )
 						->setOrder ( 'created_at', 'desc' )
 						-> setPageSize('10')
 						-> setCurPage('1');
 		
-						//var_dump($collection -> getSelect()->__toString());
+						var_dump($collection -> getSelect()->__toString());
 		$this->setProductCollection ( $collection );
 		
 		return parent::_beforeToHtml ();
