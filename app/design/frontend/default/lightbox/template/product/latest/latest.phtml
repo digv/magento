@@ -8,7 +8,7 @@
 		<div
 			class="widget w-productList w-grid w-grid-752-5cols w-mini-productList w-mini-reletedProdGrid">
 			
-			<?php $_products = $this->getProductCollection()->load(true);?>
+			<?php $_products = $this->getProductCollection();?>
 			
 			<?php foreach ($_products->getItems() as $_product): ?>
 			<dl>
