@@ -24,10 +24,6 @@ Default layout, loads most of the pages
                 <action method="addItem"><type>skin_js</type><name>js/glider.js</name></action>
             </block>
             
-            <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
-                    <label>Navigation Bar</label>
-            </block>
-                
             <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
                 <label>Page Top</label>
             </block>
@@ -38,6 +34,11 @@ Default layout, loads most of the pages
 
             </block>
         </block>
+        <reference name="root">
+            <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
+                    <label>Navigation Bar</label>
+            </block>
+        </reference>
         <reference name="top.menu">
             <block type="core/template" name="top.searchnew" as="topSearchNew" template="catalogsearch/form.mini.phtml"/>
         </reference>
