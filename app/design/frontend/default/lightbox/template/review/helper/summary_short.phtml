@@ -1,6 +1,6 @@
 	<?php 
 	$decimal = round(($this->getRatingSummary() % 20) / 20 ) * 5 ;
-	$integer = round($this->getRatingSummary()/20);
+	$integer = floor($this->getRatingSummary()/20);
 	if ($decimal) {
 		$star = $integer. '_'.$decimal;
 	} else {
