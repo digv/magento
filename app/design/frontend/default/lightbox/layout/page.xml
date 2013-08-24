@@ -28,10 +28,11 @@ Default layout, loads most of the pages
                 <label>Page Top</label>
             </block>
             
-            <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
-            
+            <reference name="root">
+                <block type="core/text_list" after="header" name="top.menu" as="topMenu" translate="label">
                     <label>Navigation Bar</label>
-            </block>
+                </block>
+            </reference>
             
             <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
             <block type="product/product_latest" name="product.latest" as="productLatest" template="product/latest/latest.phtml"/>
