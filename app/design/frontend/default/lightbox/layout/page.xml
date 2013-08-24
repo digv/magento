@@ -26,8 +26,6 @@ Default layout, loads most of the pages
             
             <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
                     <label>Navigation Bar</label>
-                    
-                    <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
             </block>
                 
             <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
@@ -40,7 +38,9 @@ Default layout, loads most of the pages
 
             </block>
         </block>
-    
+        <reference name="top.menu">
+            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+        </reference>
     </default>
 
     <print translate="label" module="page">
