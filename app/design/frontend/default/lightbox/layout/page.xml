@@ -37,7 +37,7 @@ Default layout, loads most of the pages
         </block>
     
         <reference name="root">
-                <block type="core/text_list" after="header" name="top.menu" as="topMenu" translate="label">
+                <block type="core/text_list" after="header" output="toHtml" name="top.menu" as="topMenu" translate="label">
                     <label>Navigation Bar</label>
                 </block>
         </reference>
