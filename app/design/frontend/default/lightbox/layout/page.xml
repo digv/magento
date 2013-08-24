@@ -33,18 +33,11 @@ Default layout, loads most of the pages
             <block type="page/html_header" name="header" as="header">
 
             </block>
-        </block>
-        <reference name="root">
             <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
                     <label>Navigation Bar</label>
+                    <block type="core/template" name="top.searchnew" as="topSearchNew" template="catalogsearch/form.mini.phtml"/>
             </block>
-        </reference>
-        <reference name="header">
-            <remove name="topSearch"></remove>
-        </reference>
-        <reference name="top.menu">
-            <block type="page/html" name="top.searchnew" as="topSearchNew" template="catalogsearch/form.mini.phtml"/>
-        </reference>
+        </block>
     </default>
 
     <print translate="label" module="page">
