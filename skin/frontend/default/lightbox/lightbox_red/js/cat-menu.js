@@ -7,7 +7,6 @@ $j(function() {
 )
 
 function menuMouseOver() {
-	if ($j('.cate-menu-out:hover').length > 0) {
 		if ($j(this).css('width') != '238px') {
 			$j(this).css('width', '238px');
 		}
@@ -15,7 +14,6 @@ function menuMouseOver() {
 			width : '+990px'
 		}, 200);
 
-	}
 
 }
 
