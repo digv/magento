@@ -33,7 +33,7 @@ Default layout, loads most of the pages
             <block type="page/html_header" name="header" as="header">
 
             </block>
-            <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
+            <block type="core/template" name="top.menu" as="topMenu" translate="label">
                     <label>Navigation Bar</label>
                     <block type="core/template" name="top.searchnew" as="topSearchNew" template="catalogsearch/form.mini.phtml"/>
             </block>
