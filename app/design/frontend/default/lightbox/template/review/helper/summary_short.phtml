@@ -4,7 +4,7 @@
 		<em><?php echo $this->getRatingSummary(); ?></em>
 	</span>
 	<?php endif;?>
-	<a href="#" onclick="var t = opener ? opener.window : window; t.location.href='<?php echo $this->getReviewsUrl() ?>'; return false;"><?php echo $this->__('%d Review(s)', $this->getReviewsCount()) ?></a></span>
+	<a href="#" onclick="var t = opener ? opener.window : window; t.location.href='<?php echo $this->getReviewsUrl() ?>'; return false;">(<?php echo $this->getReviewsCount(); ?>)</a></span>
 <?php elseif ($this->getDisplayIfEmpty()): ?>
 	<a href="<?php echo $this->getReviewsUrl() ?>#review-form"><?php echo $this->__('Be the first to review this product') ?></a>
 <?php endif; ?>
