@@ -23,12 +23,17 @@ Default layout, loads most of the pages
                 <action method="addItem"><type>skin_js</type><name>js/jquery-1.10.2.min.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/glider.js</name></action>
             </block>
-
+            
+            <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
+                    <label>Navigation Bar</label>
+                    
+                    <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+            </block>
+                
             <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
                 <label>Page Top</label>
             </block>
             
-            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
             <block type="product/product_latest" name="product.latest" as="productLatest" template="product/latest/latest.phtml"/>
             <block type="core/template" name="img.carousel" as="imgCarousel" template="page/html/carousel.phtml"/>
             <block type="page/html_header" name="header" as="header">
@@ -36,11 +41,6 @@ Default layout, loads most of the pages
             </block>
         </block>
     
-        <reference name="root">
-                <block type="core/text_list" after="header" output="toHtml" name="top.menu" as="topMenu" translate="label">
-                    <label>Navigation Bar</label>
-                </block>
-        </reference>
     </default>
 
     <print translate="label" module="page">
