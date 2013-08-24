@@ -39,7 +39,7 @@ Default layout, loads most of the pages
             </block>
         </block>
         <reference name="top.menu">
-            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+            <block type="core/template" name="top.searchnew" as="topSearchNew" template="catalogsearch/form.mini.phtml"/>
         </reference>
     </default>
 
