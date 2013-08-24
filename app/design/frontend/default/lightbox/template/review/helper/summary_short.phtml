@@ -1,5 +1,3 @@
-<?php if ($this->getReviewsCount()): ?>
-
 	<?php 
 	$decimal = round(($this->getRatingSummary() % 20) / 20 ) * 5 ;
 	$integer = round($this->getRatingSummary()/20);
@@ -12,7 +10,8 @@
 	<span class="star starS<?php echo $star;?>">
 		<em><?php echo $this->getRatingSummary(); ?></em>
 	</span>
+<?php if ($this->getReviewsCount()): ?>
 	<a href="#" onclick="var t = opener ? opener.window : window; t.location.href='<?php echo $this->getReviewsUrl() ?>'; return false;">(<?php echo $this->getReviewsCount(); ?>)</a></span>
 <?php elseif ($this->getDisplayIfEmpty()): ?>
-	<a href="<?php echo $this->getReviewsUrl() ?>#review-form"><?php echo $this->__('Be the first to review this product') ?></a>
+	<a href="<?php echo $this->getReviewsUrl() ?>#review-form"><?php echo $this->__('0') ?></a>
 <?php endif; ?>
