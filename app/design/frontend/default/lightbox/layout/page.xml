@@ -39,6 +39,9 @@ Default layout, loads most of the pages
                     <label>Navigation Bar</label>
             </block>
         </reference>
+        <reference name="header">
+            <remove name="topSearch"></remove>
+        </reference>
         <reference name="top.menu">
             <block type="page/html" name="top.searchnew" as="topSearchNew" template="catalogsearch/form.mini.phtml"/>
         </reference>
