@@ -6,6 +6,10 @@
 	} else {
 		$star = $integer;
 	}
+	//if no one rates this product, we default its rating to 5 stars
+	if (!$this->getRatingSummary()) {
+		$star = 5;
+	}
 	?>
 	<span class="star starS<?php echo $star;?>">
 		<em><?php echo $this->getRatingSummary(); ?></em>
@@ -13,5 +17,5 @@
 <?php if ($this->getReviewsCount()): ?>
 	<a href="#" onclick="var t = opener ? opener.window : window; t.location.href='<?php echo $this->getReviewsUrl() ?>'; return false;">(<?php echo $this->getReviewsCount(); ?>)</a></span>
 <?php elseif ($this->getDisplayIfEmpty()): ?>
-	<a href="<?php echo $this->getReviewsUrl() ?>#review-form"><?php echo $this->__('0') ?></a>
+	<a href="<?php echo $this->getReviewsUrl() ?>#review-form">(<?php echo $this->__('0') ?>)</a>
 <?php endif; ?>
