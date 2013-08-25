@@ -1,10 +1,29 @@
 <div id="uni-header" class="widget w-uniHeader">
-<h1><a id="logo" title="Lightinthebox.com"
-	href="http://www.lightinthebox.com"> <img width="150" height="46"
-	alt="Lightinthebox"
-	src="http://www.lightinthebox.com/includes/templates/dev_v2/css/images/sprite/logo.png">
-<span>首页</span> </a></h1>
+	<h1>
+		<a id="logo" title="Lightinthebox.com"
+			href="<?php echo $this->getUrl('')?>"> 
+			
+			<img width="150" height="46"
+				alt="Lightinthebox"
+				src="http://www.lightinthebox.com/includes/templates/dev_v2/css/images/sprite/logo.png" />
+
+			<span>首页</span> 
+		</a>
+	</h1>
+	
 </div>
+
+<?php 	 
+$routeName = Mage::app()->getRequest()->getRouteName();
+$identifier = Mage::getSingleton('cms/page')->getIdentifier();
+?>
+
+<?php if ($this->getIsHomePage() || ($routeName == 'cms' && $identifier == 'home') ):?>
+	    <?php $menuDisplay="display:block;" ?>
+<?php else: ?>
+        <?php $menuDisplay="display:none;" ?>
+<?php endif; ?>
+
 <div id="mainNav" class="widget w-mainNav">
 	<div class="allCates navSp">
 		<dl>
@@ -16,7 +35,7 @@
 			<dd id="litb-cate-menu" class="litb-cate-menu ctrInfo ctrTrackA"
 				style="display: block;" page="index" ctr="{area:'category_menu'}">
 				
-				<div id="cate-menu" class="cate-menu" style="height: 307px; width: 238px; display: block; z-index: 0; overflow: hidden;">
+				<div id="cate-menu" class="cate-menu" style="height: 307px; width: 238px; <?php echo $menuDisplay; ?> z-index: 0; overflow: hidden;">
 				
 					<?php echo $this->getChildHtml('topMenu') ?>
 					
