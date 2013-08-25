@@ -27,9 +27,10 @@ Default layout, loads most of the pages
             <block type="core/text_list" name="after_body_start" as="after_body_start" translate="label">
                 <label>Page Top</label>
             </block>
+            <block type="core/text_list" name="content" as="content" translate="label">
+                <label>Main Content Area</label>
+            </block>
             
-            <block type="product/product_latest" name="product.latest" as="productLatest" template="product/latest/latest.phtml"/>
-            <block type="core/template" name="img.carousel" as="imgCarousel" template="page/html/carousel.phtml"/>
             <block type="page/html_header" name="header" as="header">
                    <block type="catalog/navigation" name="top.menu" as="topMenu" translate="label" template="catalog/navigation/top.phtml">
                     <label>Navigation Bar</label>
