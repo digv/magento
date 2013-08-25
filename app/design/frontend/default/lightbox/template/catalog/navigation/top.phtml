@@ -50,6 +50,20 @@ if (count ( $_categories )) :
 			
 			print '</dt>';
 			
+			$grandChildren = $childCat -> getChildren ();
+			
+			foreach ($grandChildren as $grandChild) {
+				print '<dd>';
+				print '<h4>';
+				
+				print '<a href="'. $this -> getCategoryUrl ($grandChild). '">';
+				print $grandChild->getName ();
+				print '</a>';
+				
+				print '</h4>';
+				print '</dd>';
+			}
+			
 			print '</dl>';
 		
 		}
