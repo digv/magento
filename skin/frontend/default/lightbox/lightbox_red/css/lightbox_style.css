@@ -9584,11 +9584,14 @@ a.iconWiewIt:hover {
 .reward-credit strong {
 	font: normal 18px/18px Georgia, serif;
 }
-
+.breadcrumbs:before, .breadcrumbs:after {
+	content: '';
+	display:'table';
+	line-height:0;
+}
 .breadcrumbs {
-    border-bottom: 2px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
     clear: both;
-    display: block;
     margin: 0 auto;
     position: relative;
     width: 992px;
