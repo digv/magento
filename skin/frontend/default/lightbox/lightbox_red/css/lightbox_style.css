@@ -9448,19 +9448,17 @@ a.iconWiewIt:hover {
 }
 
 .breadcrumbs>ul>li.categoryhome>a {
-    background-position:right -222px;
+    background-position:right -250px;
     padding-right:19px;
 }
 
 .breadcrumbs>ul>li>a {
-	margin-top: 8px;
 	line-height: 29px;
 	display:inline-block;
 	padding:0 8px 0 12px;
 }
 
 .breadcrumbs>ul>li>strong {
-	margin-top: 8px;
 	line-height: 29px;
 	display:inline-block;
     padding:0 8px 0 12px;
