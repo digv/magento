@@ -45,9 +45,6 @@ Default layout, loads most of the pages
     <cms_page translate="label">
         <label>CMS Pages (All)</label>
         <reference name="content">
-            <block type="product/product_latest" name="product.latest" as="productLatest" template="product/latest/latest.phtml"/>
-            <block type="core/template" name="img.carousel" as="imgCarousel" template="page/html/carousel.phtml"/>
-            
             <block type="core/template" name="page_content_heading" template="cms/content_heading.phtml"/>
             <block type="page/html_wrapper" name="cms.wrapper" translate="label">
                 <label>CMS Content Wrapper</label>
