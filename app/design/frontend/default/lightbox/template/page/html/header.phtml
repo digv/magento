@@ -22,11 +22,35 @@ $identifier = Mage::getSingleton('cms/page')->getIdentifier();
 	    <?php 
 	    	$menuDisplay="display:block;" ;
 	    	$dropdown = "";
+	    	$hideDropDown = '';
 	    ?>
 <?php else: ?>
         <?php 
         	$menuDisplay="display:none;" ;
         	$dropdown = "<span class='dropdown'>x</span>";
+        	$hideDropDown = <<<html
+        	<script type="text/javascript">
+        	
+        		\$j(function() {
+        	
+        			\$j('.linkAllCate').hover (
+        			
+        				function () {
+        					
+        					\$j('.cate-menu').show();
+        				},
+        				
+        				
+        				function () {
+        				
+        					\$j('.cate-menu').hide();
+        				}
+        			
+        			);
+        	
+        		})
+        	</script>
+html;
         ?>
 <?php endif; ?>
 
@@ -75,4 +99,4 @@ $identifier = Mage::getSingleton('cms/page')->getIdentifier();
 
 <script type="text/javascript" src="<?php echo $this->getSkinUrl ('js/cat-menu.js'); ?>"></script>
 
-
+<?php echo $hideDropDown; ?>
