@@ -9586,7 +9586,7 @@ a.iconWiewIt:hover {
 }
 .breadcrumbs:before, .breadcrumbs:after {
 	content: '';
-	display:'table';
+	display:table;
 	line-height:0;
 }
 .breadcrumbs {
@@ -9595,8 +9595,13 @@ a.iconWiewIt:hover {
     margin: 0 auto;
     position: relative;
     width: 992px;
+    display:table;
 }
 .breadcrumbs > ul > li {
     float: left;
     font-size: 12px;
+}
+
+.breadcrumbs > ul > li > a{
+    margin-top:8px;
 }
