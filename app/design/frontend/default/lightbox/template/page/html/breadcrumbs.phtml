@@ -28,9 +28,9 @@
 <div class="breadcrumbs">
     <ul>
         <?php foreach($crumbs as $_crumbName=>$_crumbInfo): ?>
-            <li class="<?php echo $_crumbName ?>">
+            <li class="<?php echo $_crumbName == 'home' ? $_crumbName : 'categoryhome' ?>">
             <?php if($_crumbInfo['link']): ?>
-                <a href="<?php echo $_crumbInfo['link'] ?>" title="<?php echo $this->htmlEscape($_crumbInfo['title']) ?>"><?php echo $this->htmlEscape($_crumbInfo['label']) ?></a>
+                <a href="<?php echo $_crumbInfo['link'] ?>" title="<?php echo $this->htmlEscape($_crumbInfo['title']) ?>"><?php echo $_crumbName == 'home'? '' : $this->htmlEscape($_crumbInfo['label']) ?></a>
             <?php elseif($_crumbInfo['last']): ?>
                 <strong><?php echo $this->htmlEscape($_crumbInfo['label']) ?></strong>
             <?php else: ?>
