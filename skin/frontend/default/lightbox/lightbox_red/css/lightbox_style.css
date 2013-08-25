@@ -9447,6 +9447,11 @@ a.iconWiewIt:hover {
 	height:17px;
 }
 
+.breadcrumbs>ul>li.categoryhome>a {
+    background-position:right -222px;
+    padding-right:19px;
+}
+
 .breadcrumbs>ul>li>a {
 	margin-top: 8px;
 	line-height: 29px;
