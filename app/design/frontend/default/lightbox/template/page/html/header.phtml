@@ -19,9 +19,15 @@ $identifier = Mage::getSingleton('cms/page')->getIdentifier();
 ?>
 
 <?php if ($this->getIsHomePage() || ($routeName == 'cms' && $identifier == 'home') ):?>
-	    <?php $menuDisplay="display:block;" ?>
+	    <?php 
+	    	$menuDisplay="display:block;" ;
+	    	$dropdown = "";
+	    ?>
 <?php else: ?>
-        <?php $menuDisplay="display:none;" ?>
+        <?php 
+        	$menuDisplay="display:none;" ;
+        	$dropdown = "<span class='dropdown'>x</span>";
+        ?>
 <?php endif; ?>
 
 <div id="mainNav" class="widget w-mainNav">
@@ -29,7 +35,7 @@ $identifier = Mage::getSingleton('cms/page')->getIdentifier();
 		<dl>
 			<dt>
 				<a class="linkAllCate"
-					href="http://www.lightinthebox.com/see-all.html">所有商品分类 </a>
+					href="http://www.lightinthebox.com/see-all.html">所有商品分类 <?php echo $dropdown; ?></a>
 			</dt>
 			
 			<dd id="litb-cate-menu" class="litb-cate-menu ctrInfo ctrTrackA"

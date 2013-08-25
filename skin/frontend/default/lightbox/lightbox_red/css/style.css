@@ -1397,8 +1397,7 @@ a.favorEntry:hover {
 
 .w-proAttention,.w-joinUsProgram,.w-joinUsProgram a,.w-joinUsProgram a span
 	{
-	background-image:
-		url("../images/pro-attention-bg.png");
+	background-image: url("../images/pro-attention-bg.png");
 	background-repeat: no-repeat;
 }
 
@@ -1493,17 +1492,15 @@ a.favorEntry:hover {
 }
 
 .w-wordsOfUser blockquote cite {
-	background:
-		url("../images/quote-left-mini.png")
-		no-repeat scroll 0 0 transparent;
+	background: url("../images/quote-left-mini.png") no-repeat scroll 0 0
+		transparent;
 	display: block;
 	margin: 5px 0;
 }
 
 .w-wordsOfUser blockquote cite span {
-	background:
-		url("../images/quote-right-mini.png")
-		no-repeat scroll right bottom transparent;
+	background: url("../images/quote-right-mini.png") no-repeat scroll right
+		bottom transparent;
 	padding: 10px 20px;
 }
 
@@ -1573,9 +1570,8 @@ a.favorEntry:hover {
 }
 
 #dfp-home-slides {
-	background:
-		url("../images/home-slide-bg.png")
-		no-repeat scroll 0 bottom transparent;
+	background: url("../images/home-slide-bg.png") no-repeat scroll 0 bottom
+		transparent;
 	display: block;
 	float: left;
 	height: 300px;
@@ -1590,9 +1586,8 @@ a.favorEntry:hover {
 }
 
 #slidesThumb li {
-	background:
-		url("../images/home-slide-thumb-bg.png")
-		no-repeat scroll 0 -12px transparent;
+	background: url("../images/home-slide-thumb-bg.png") no-repeat scroll 0
+		-12px transparent;
 	cursor: pointer;
 	display: inline;
 	float: left;
@@ -2211,9 +2206,7 @@ a.favorEntry:hover {
 }
 
 #otherSites a.in {
-	background:
-		url("../images/y.gif")
-		no-repeat scroll 0 -452px transparent;
+	background: url("../images/y.gif") no-repeat scroll 0 -452px transparent;
 	margin: 0 6px 0 2px;
 	padding-left: 20px;
 }
@@ -2319,35 +2312,46 @@ a.favorEntry:hover {
 }
 
 .sectionslide {
-	
-	display:none;
+	display: none;
 }
 
-.slidercontrol a{
-background: url("../images/home-slide-thumb-bg.png") no-repeat scroll 0 -12px transparent;
-    cursor: pointer;
-    display: block;
-    float: left;
-    height: 12px;
-    margin: 0 6px;
-    width: 12px;
+.slidercontrol a {
+	background: url("../images/home-slide-thumb-bg.png") no-repeat scroll 0
+		-12px transparent;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 12px;
+	margin: 0 6px;
+	width: 12px;
 	font-weight: bold;
 	line-height: 1.25em;
-    margin: 0 1px;
-    overflow: hidden;
-    padding: 0;
-    text-align: left;
-    text-decoration: none;
-    text-indent: -10000px;
-
+	margin: 0 1px;
+	overflow: hidden;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+	text-indent: -10000px;
 }
 
 .slidercontrol a.active {
-    background-position: 0 0;
+	background-position: 0 0;
 }
 
 .slidercontrolwr {
-    margin: 280px 230px;
-    position: absolute;
-    width: 100%;
+	margin: 280px 230px;
+	position: absolute;
+	width: 100%;
+}
+
+.linkAllCate span.dropdown {
+	display: inline-block;
+	background:
+		url("../images/nav-bar_37a415b136ad5b58.png")
+		no-repeat scroll 202px -121px transparent;
+	position: absolute;
+	text-indent: -9999em;
+	right: 10px;
+	top: 5px;
+	width: 100%;
 }
