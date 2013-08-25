@@ -4,9 +4,7 @@
  */
 
 ?>
-<div id="mainNav" class="widget w-mainNav">
 
- <div class="allCates navSp">
 	<dl>
 		<dt><a class="linkAllCate"
 			href="http://www.lightinthebox.com/see-all.html">所有商品分类 </a>
@@ -76,28 +74,3 @@
 		
 		</dd>
 	</dl>
- </div>
-
-	<div class="mainSearch navSp">
-	
-		<?php echo $this->getChildHtml('topSearchNew'); ?>
-		
-		<div id="uniYourCart" class="navSp">
-				<dl id="cartContainer" class="js_toggleCart cartWidth">
-					<dt id="cartInfo" class="navSp">
-						<a class="navSp" href="http://www.lightinthebox.com/index.php?main_page=shopping_cart" rel="nofollow">
-							<span id="cartItem" class="navSp">
-								<span class="navSp">
-									<span id="cartCount">0</span>
-									<span id="cartText">Cart</span>
-									<i class="navSp"></i>
-								</span>
-							</span>
-						</a>
-					</dt>
-				</dl>
-			</div>
-	</div>
-
-</div>
-<script type="text/javascript" src="<?php echo $this->getSkinUrl ('js/cat-menu.js'); ?>"></script>
