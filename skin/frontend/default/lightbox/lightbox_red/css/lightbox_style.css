@@ -9584,3 +9584,16 @@ a.iconWiewIt:hover {
 .reward-credit strong {
 	font: normal 18px/18px Georgia, serif;
 }
+
+.breadcrumbs {
+    border-bottom: 2px solid #DDDDDD;
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 992px;
+}
+.breadcrumbs > ul > li {
+    float: left;
+    font-size: 12px;
+}
