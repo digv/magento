@@ -7,7 +7,23 @@
 </div>
 <div id="mainNav" class="widget w-mainNav">
 	<div class="allCates navSp">
-		<?php echo $this->getChildHtml('topMenu') ?>
+		<dl>
+			<dt>
+				<a class="linkAllCate"
+					href="http://www.lightinthebox.com/see-all.html">所有商品分类 </a>
+			</dt>
+			
+			<dd id="litb-cate-menu" class="litb-cate-menu ctrInfo ctrTrackA"
+				style="display: block;" page="index" ctr="{area:'category_menu'}">
+				
+				<div id="cate-menu" class="cate-menu" style="height: 307px; width: 238px; display: block; z-index: 0; overflow: hidden;">
+				
+					<?php echo $this->getChildHtml('topMenu') ?>
+					
+				</div>
+				
+			</dd>
+		</dl>
 	</div>
 	
 		<div class="mainSearch navSp">

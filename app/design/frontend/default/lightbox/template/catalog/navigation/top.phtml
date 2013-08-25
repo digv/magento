@@ -1,76 +1,70 @@
-<?php 
+<?php
 /*
  * nav menu
  */
 
 ?>
-
-	<dl>
-		<dt><a class="linkAllCate"
-			href="http://www.lightinthebox.com/see-all.html">所有商品分类 </a>
-		</dt>
-		<dd id="litb-cate-menu" class="litb-cate-menu ctrInfo ctrTrackA"
-			style="display: block;" page="index" ctr="{area:'category_menu'}">
 		
-			<div id="cate-menu" class="cate-menu" style="height: 307px; width: 238px; display: block; z-index: 0; overflow: hidden;">
-		
-			<?php $_categories = $this->getStoreCategories() ?>
-			
-			<?php if(count($_categories)): ?>
-			
-			<?php
-				$m = 0; 
-				foreach ($_categories as $_category) {
-					
-					print '<div class="cate-menu-out" style="width: 990px;">';
-					
-					print '<h2>';
-					
-					print '<a href="'. $this-> getCategoryUrl ($_category). '">';
-					print $_category->getName();
-					print '<em></em>';
-					print '</a>';
-					
-					print '</h2>';
-					
-					//child categories;
-					
-					$childCats = $_category -> getChildren();
-					
-					print '<div class="cate-menu-in" style="width: 750px; top: -'.($m * 28 ).'px; display:none; z-index: 50;">';
-					
-					print '<div class="cate-menu-sub">';
-					foreach ($childCats as $childCat) {
+<?php
+$_categories = $this->getStoreCategories ()?>
+<?php
 
-						print '<dl>';
-						
-						print '<dt>';
-						
-						print '<h3>';
-						print '<a href="'. $this-> getCategoryUrl ($childCat). '">';
-						print $childCat ->getName();
-						print '<em style="display:none;"></em>';
-						print '</a>';
-						print '</h3>';
-						
-						print '</dt>';
-						
-						print '</dl>';
-
-					}
-					print '</div>';
-					print '</div>';
-					
-					print '</div>';
-					
-					$m ++;
-				}
+if (count ( $_categories )) :
+	?>
 			
-			?>
-			
-			<?php endif;?>
-			
-			</div>
+<?php
+	$m = 0;
+	foreach ( $_categories as $_category ) {
 		
-		</dd>
-	</dl>
+		print '<div class="cate-menu-out" style="width: 990px;">';
+		
+		print '<h2>';
+		
+		print '<a href="' . $this->getCategoryUrl ( $_category ) . '">';
+		print $_category->getName ();
+		print '<em></em>';
+		print '</a>';
+		
+		print '</h2>';
+		
+		//child categories;
+		
+
+		$childCats = $_category->getChildren ();
+		
+		print '<div class="cate-menu-in" style="width: 750px; top: -' . ($m * 28) . 'px; display:none; z-index: 50;">';
+		
+		print '<div class="cate-menu-sub">';
+		foreach ( $childCats as $childCat ) {
+			
+			print '<dl>';
+			
+			print '<dt>';
+			
+			print '<h3>';
+			print '<a href="' . $this->getCategoryUrl ( $childCat ) . '">';
+			print $childCat->getName ();
+			print '<em style="display:none;"></em>';
+			print '</a>';
+			print '</h3>';
+			
+			print '</dt>';
+			
+			print '</dl>';
+		
+		}
+		print '</div>';
+		print '</div>';
+		
+		print '</div>';
+		
+		$m ++;
+	}
+	
+	?>
+			
+			
+
+<?php endif;
+?>
+			
