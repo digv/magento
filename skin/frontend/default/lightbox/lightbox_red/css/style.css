@@ -2346,12 +2346,69 @@ a.favorEntry:hover {
 
 .linkAllCate span.dropdown {
 	display: inline-block;
-	background:
-		url("../images/nav-bar_37a415b136ad5b58.png")
-		no-repeat scroll 202px -121px transparent;
+	background: url("../images/nav-bar_37a415b136ad5b58.png") no-repeat
+		scroll 202px -121px transparent;
 	position: absolute;
 	text-indent: -9999em;
 	right: 10px;
 	top: 5px;
 	width: 100%;
+}
+
+.category-title {
+	border-bottom: 2px solid #AD3231;
+	line-height: 18px;
+	margin-top: 30px;
+}
+
+.category-title>h1 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 18px;
+	margin: 0;
+	padding: 2px 5px 3px 0;
+}
+
+.category-products {
+	padding: 15px 0 32px;
+}
+
+.category-products>.toolbar {
+	background-color: rgb(251, 251, 251);
+	background-image: linear-gradient(to bottom, rgb(255, 255, 255),
+		rgb(244, 244, 244) );
+	background-repeat: repeat-x;
+	border: 1px solid rgb(221, 221, 221);
+	color: rgb(153, 153, 153);
+	font: 12px/19px Helvetica, "Helvetica Neue", Arial, sans-serif;
+	margin-top: 10px;
+	padding: 7px 10px;
+	height: 30px;
+}
+
+.toolbar>.pager {
+	margin-right: 0;
+	width: 300px;
+	float: left;
+}
+
+.toolbar>.pager>.amount {
+	float: left;
+	padding-right: 5px;
+}
+
+.toolbar>.sorter {
+	float: right;
+}
+
+.toolbar>.sorter>.view-mode {
+	float: left;
+}
+
+.toolbar>.sorter>.sort-by {
+	float: right;
+	height: 18px;
+	margin-right: 5px;
+	margin-top: 1px;
+	text-transform: lowercase;
 }
