@@ -6,6 +6,7 @@
         $_imgHtml = '<p class="category-image"><img src="'.$_imgUrl.'" alt="'.$this->htmlEscape($_category->getName()).'" title="'.$this->htmlEscape($_category->getName()).'" /></p>';
         $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
     }
+    
 ?>
 <div class="page-title category-title">
     <?php if($this->IsRssCatalogEnable() && $this->IsTopCategory()): ?>
@@ -13,7 +14,7 @@
     <?php endif; ?>
     <h1><?php echo $_helper->categoryAttribute($_category, $_category->getName(), 'name') ?></h1>
     <p>
-		<span class="count">(<?php echo $this -> getTotalNum(); ?>)</span>
+		<span class="count">(<?php echo $_category -> getProductCount(); ?>)</span>
 	</p>
 </div>
 
