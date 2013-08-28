@@ -2374,15 +2374,14 @@ a.favorEntry:hover {
 }
 
 .toolbar {
-	background-color: rgb(251, 251, 251);
-	background-image: linear-gradient(to bottom, rgb(255, 255, 255),
-		rgb(244, 244, 244) );
-	background-repeat: repeat-x;
-	border: 1px solid rgb(221, 221, 221);
-	color: rgb(153, 153, 153);
-	font: 12px/19px Helvetica, "Helvetica Neue", Arial, sans-serif;
-	margin-top: 10px;
-	padding: 7px 10px;
+	 background-color: #FBFBFB;
+    background-image: linear-gradient(to bottom, #FFFFFF, #F4F4F4);
+    background-repeat: repeat-x;
+    border: 1px solid #DDDDDD;
+    color: #999999;
+    font: 12px/19px Helvetica,"Helvetica Neue",Arial,sans-serif;
+    margin-top: 10px;
+    padding: 7px 10px;
 }
 
 .toolbar .sort-type {
