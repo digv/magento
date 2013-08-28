@@ -2362,6 +2362,7 @@ a.favorEntry:hover {
 }
 
 .category-title>h1 {
+	float:left;
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 18px;

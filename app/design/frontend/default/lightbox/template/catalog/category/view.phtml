@@ -13,7 +13,7 @@
     <?php endif; ?>
     <h1><?php echo $_helper->categoryAttribute($_category, $_category->getName(), 'name') ?></h1>
     <p>
-		<span class="count">(<?php echo $this->getTotalNum(); ?>)</span>
+		<span class="count">(<?php echo $this->getCollection() -> getTotalNum(); ?>)</span>
 	</p>
 </div>
 
