@@ -1,0 +1,60 @@
+<?php
+/**
+ * Product list toolbar
+ *
+ * @see Mage_Catalog_Block_Product_List_Toolbar
+ */
+?>
+<?php if($this->getCollection()->getSize()): ?>
+<div class="toolbar">
+
+	<div class="sort-by">
+	
+		<?php foreach($this->getAvailableOrders() as $_key=>$_order): ?>
+			<span >
+				<?php if($this->isOrderCurrent($_key)): ?>
+				<a href="<?php echo $this->getOrderUrl($_key, $this->getCurrentDirection() == 'desc' ? 'asc' : 'desc') ?>" <?php if($this->isOrderCurrent($_key)): ?> class="item-selected"<?php endif; ?>>
+				<?php echo $this->__($_order) ?>
+				</a>
+				<?php else:?>
+				<a href="<?php echo $this->getOrderUrl($_key,  'asc') ?>" >
+				<?php echo $this->__($_order) ?>
+				</a>
+				<?php endif;?>
+			</span>
+			<em>|</em>
+        <?php endforeach; ?>
+	</div>
+	
+	<div class="show-type">
+		<div class="list-style">
+			<?php if( $this->isEnabledViewSwitcher() ): ?>
+				<?php $_modes = $this->getModes(); ?>
+            	<?php if($_modes && count($_modes)>1): ?>
+            		<?php foreach ($this->getModes() as $_code=>$_label): ?>
+                		<?php if($this->isModeActive($_code)): ?>
+                    	<span class="list-item item-selected litb-icon-gallery-selected"> <?php echo $_label ?></span>
+                		<?php else: ?>
+                    		<a href="<?php echo $this->getModeUrl($_code) ?>" title="<?php echo $_label ?>" class="list-item litb-icon-list"><?php echo $_label ?></a>
+                		<?php endif; ?>
+            		<?php endforeach; ?>
+            	<?php endif; ?>
+			<?php endif;?>
+		</div>
+		
+		<dl class="list-num">
+			<dt class="show-label">Show:</dt>
+			<dd>
+				<select id="listNumSelect">
+            		<?php foreach ($this->getAvailableLimit() as  $_key=>$_limit): ?>
+                		<option value="<?php echo $this->getLimitUrl($_key) ?>"<?php if($this->isLimitCurrent($_key)): ?> selected="selected"<?php endif ?>>
+                    <?php echo $_limit ?>
+               	 		</option>
+            		<?php endforeach; ?>
+            	</select>
+			</dd>
+		</dl>
+	</div>
+</div>
+<?php endif ?>
+
