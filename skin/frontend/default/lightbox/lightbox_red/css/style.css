@@ -2457,3 +2457,9 @@ a.favorEntry:hover {
     width: auto;
 }
 
+.list-num select {
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    line-height: 30px;
+}
+
