@@ -2401,9 +2401,16 @@ a.favorEntry:hover {
     float: right;
 }
 
-.show-type dd, .show-type .list-style, .show-type .list-num {
+.show-type dd, .show-type .list-style, .show-type .list-num ,  .show-type .show-label{
     float: left;
     margin-right: 5px;
+}
+
+.show-type .list-num {
+    margin-right: 0;
+}
+.show-type .show-label {
+    line-height: 20px;
 }
 .show-type .list-item {
     height: auto !important;
