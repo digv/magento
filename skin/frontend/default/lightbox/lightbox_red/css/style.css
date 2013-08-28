@@ -2386,29 +2386,52 @@ a.favorEntry:hover {
 	height: 30px;
 }
 
-.toolbar>.pager {
-	margin-right: 0;
-	width: 300px;
-	float: left;
+.toolbar .sort-type {
+    float: left;
+    height: 18px;
+    margin-right: 5px;
+    margin-top: 1px;
+    text-transform: lowercase;
 }
 
-.toolbar>.pager>.amount {
-	float: left;
-	padding-right: 5px;
+ .toolbar .item-selected {
+    color: #990000;
+    font-weight: bold;
 }
 
-.toolbar>.sorter {
-	float: right;
+.toolbar  .show-type {
+    float: right;
 }
 
-.toolbar>.sorter>.view-mode {
-	float: left;
+.show-type dd, .show-type .list-style, .show-type .list-num {
+    float: left;
+    margin-right: 5px;
+}
+.show-type .list-item {
+    height: auto !important;
+    padding: 0 5px 0 20px;
+    width: auto !important;
 }
 
-.toolbar>.sorter>.sort-by {
-	float: right;
-	height: 18px;
-	margin-right: 5px;
-	margin-top: 1px;
-	text-transform: lowercase;
+.litb-icon-list {
+    background: url("../images/arrow-new_8c2aa4f84d284252.png") no-repeat scroll -500px -781px transparent;
+    height: 13px;
+    width: 14px;
 }
+[class^="litb-icon-"], [class*="litb-icon-"] {
+    display: inline-block;
+    margin-top: 1px;
+    vertical-align: top;
+}
+
+.show-type dd {
+    float: left;
+    margin-right: 5px;
+}
+.show-type #listNumSelect {
+    border-radius: 0 0 0 0;
+    height: auto;
+    padding: 0;
+    width: auto;
+}
+
