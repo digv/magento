@@ -2463,3 +2463,18 @@ a.favorEntry:hover {
     line-height: 30px;
 }
 
+.category-title p {
+	color: #FFFFFF;
+    font: 11px Verdana,Helvetica,Sans-serif;
+    vertical-align: top;
+}
+
+.category-title .count {
+	color: #999999;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 5px;
+}
+
