@@ -2383,7 +2383,6 @@ a.favorEntry:hover {
 	font: 12px/19px Helvetica, "Helvetica Neue", Arial, sans-serif;
 	margin-top: 10px;
 	padding: 7px 10px;
-	height: 30px;
 }
 
 .toolbar .sort-type {
@@ -2417,6 +2416,23 @@ a.favorEntry:hover {
     background: url("../images/arrow-new_8c2aa4f84d284252.png") no-repeat scroll -500px -781px transparent;
     height: 13px;
     width: 14px;
+}
+.litb-icon-gallery {
+    background: url("../images/arrow-new_8c2aa4f84d284252.png") no-repeat scroll -250px -1191px transparent;
+    height: 13px;
+    width: 15px;
+}
+
+.litb-icon-list-selected {
+    background: url("../images/arrow-new_8c2aa4f84d284252.png") no-repeat scroll -481px -799px transparent;
+    height: 13px;
+    width: 14px;
+}
+
+.litb-icon-gallery-selected {
+    background: url("../images/arrow-new_8c2aa4f84d284252.png"") no-repeat scroll -230px -1209px transparent;
+    height: 13px;
+    width: 15px;
 }
 [class^="litb-icon-"], [class*="litb-icon-"] {
     display: inline-block;
