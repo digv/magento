@@ -2483,6 +2483,7 @@ a.favorEntry:hover {
     float: left;
     margin: 0 0 0 16px;
     position: relative;
+    width: 160px;
 }
 .category-products .mini-text {
     color: #333333;
