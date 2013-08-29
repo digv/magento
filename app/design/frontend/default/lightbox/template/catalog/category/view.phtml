@@ -6,7 +6,8 @@
         $_imgHtml = '<p class="category-image"><img src="'.$_imgUrl.'" alt="'.$this->htmlEscape($_category->getName()).'" title="'.$this->htmlEscape($_category->getName()).'" /></p>';
         $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
     }
-    
+    $categoryItem = Mage::getResourceModel('catalog/product_collection')
+            ->addCategoryFilter($_category) -> count();
 ?>
 <div class="page-title category-title">
     <?php if($this->IsRssCatalogEnable() && $this->IsTopCategory()): ?>
@@ -14,7 +15,7 @@
     <?php endif; ?>
     <h1><?php echo $_helper->categoryAttribute($_category, $_category->getName(), 'name') ?></h1>
     <p>
-		<span class="count">(<?php echo $_category -> getProductCount(); ?>)</span>
+		<span class="count">(<?php echo $categoryItem; ?>)</span>
 	</p>
 </div>
 
