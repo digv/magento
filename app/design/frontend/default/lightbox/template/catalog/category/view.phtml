@@ -9,9 +9,7 @@
     $prodCollection= Mage::getResourceModel('catalog/product_collection')
             ->addCategoryFilter($_category);
 
-Mage::getSingleton ( 'catalog / product_status' )->addVisibleFilterToCollection ( $prodCollection );
-Mage::getSingleton ( 'catalog / product_visibility' )->addVisibleInCatalogFilterToCollection ( $prodCollection ); 
-$categoryItem  = $prodCollection -> count ();
+	$categoryItem  = $prodCollection -> getSize ();
 ?>
 <div class="page-title category-title">
     <?php if($this->IsRssCatalogEnable() && $this->IsTopCategory()): ?>
