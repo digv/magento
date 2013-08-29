@@ -6,9 +6,11 @@
         $_imgHtml = '<p class="category-image"><img src="'.$_imgUrl.'" alt="'.$this->htmlEscape($_category->getName()).'" title="'.$this->htmlEscape($_category->getName()).'" /></p>';
         $_imgHtml = $_helper->categoryAttribute($_category, $_imgHtml, 'image');
     }
+    
     $prodCollection= Mage::getResourceModel('catalog/product_collection')
+    		->addAttributeToFilter('status', 1)
+    		->addAttributeToFilter('visibility', 4)
             ->addCategoryFilter($_category);
-
 	$categoryItem  = $prodCollection -> getSize ();
 ?>
 <div class="page-title category-title">
