@@ -1,0 +1,20 @@
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body id="indexBody">
+
+	<?php echo $this->getChildHtml('header') ?>
+	<?php echo $this->getChildHtml('breadcrumbs') ?>
+	<div id="wrapper" class="widget">
+			<?php echo $this->getChildHtml('content') ?>
+	</div>
+	
+</body>
+</html>
