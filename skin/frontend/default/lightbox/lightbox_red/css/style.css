@@ -2542,3 +2542,7 @@ a.favorEntry:hover {
     width: 384px;
     height:384px;
 }
+
+.magnify img {
+	width: 384px;
+}
