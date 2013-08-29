@@ -2499,7 +2499,7 @@ a.favorEntry:hover {
     overflow:hidden;
 }
 
-.prod-name .price {
+.prod-item .price {
 	border-bottom: 2px solid transparent;
     color: #990000;
     display: inline-block;
