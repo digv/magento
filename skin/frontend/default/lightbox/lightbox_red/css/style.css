@@ -2492,7 +2492,9 @@ a.favorEntry:hover {
     height:265px;
 }
 .category-products .prod-name {
+	height:36px;
     line-height: 16px;
     margin-bottom: 9px;
-    word-wrap: break-word;
+    word-break: break-all;
+    overflow:hidden;
 }
