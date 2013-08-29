@@ -2507,3 +2507,33 @@ a.favorEntry:hover {
     font-weight: bold;
     line-height: 18px;
 }
+
+.container:before, .container:after {
+	content: "";
+    display: table;
+    line-height: 0;
+}
+
+.container:after {
+    clear: both;
+}
+
+.container {
+    margin: 0 auto 10px;
+    width: 992px;
+}
+
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}
+
+.litb-span24 {
+    width: 384px;
+}
+
+.litb-span36 {
+    width: 576px;
+}
