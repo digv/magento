@@ -2489,4 +2489,10 @@ a.favorEntry:hover {
     color: #333333;
     font-size: 12px;
     line-height: 18px;
+    height:265px;
+}
+.category-products .prod-name {
+    line-height: 16px;
+    margin-bottom: 9px;
+    word-wrap: break-word;
 }
