@@ -2498,3 +2498,12 @@ a.favorEntry:hover {
     word-break: break-all;
     overflow:hidden;
 }
+
+.prod-name .price {
+	border-bottom: 2px solid transparent;
+    color: #990000;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+}
