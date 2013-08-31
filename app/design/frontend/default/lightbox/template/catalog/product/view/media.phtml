@@ -3,7 +3,10 @@
     $_helper = $this->helper('catalog/output');
 ?>
 <div class="widget magnify">
-		<img class="imgPreview" alt="" data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" title="" />
+		<img class="imgPreview" alt="<?php echo $this->htmlEscape($this->getImageLabel()); ?>" 
+			 data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" 
+			 src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" 
+			 title="<?php echo $this->htmlEscape($this->getImageLabel()); ?>" />
 </div>
 <script type="text/javascript">
 
@@ -13,8 +16,8 @@ $j(function(){
         zoomWindowHeight:383,
         borderSize:1,
         borderColour:'#AAAAAA',
-        zoomWindowOffetx:10,
-    	zoomWindowOffety:10
+        zoomWindowOffetx:16,
+    	zoomWindowOffety:0
     }); 
 });  
 </script>
