@@ -22,7 +22,7 @@
 }
 
 .jcarousel-skin-tango .jcarousel-clip-horizontal {
-    width:  315px;
+    width:  325px;
     height: 60px;
 }
 
@@ -60,10 +60,10 @@
  */
 .jcarousel-skin-tango .jcarousel-next-horizontal {
     position: absolute;
-    top: 13px;
+    top: 2px;
     right: 0px;
-    width: 32px;
-    height: 32px;
+    width: 17px;
+    height: 54px;
     cursor: pointer;
     background: transparent url('../images/carousel_preNext.png') no-repeat 0 0;
 }
@@ -93,10 +93,10 @@
 
 .jcarousel-skin-tango .jcarousel-prev-horizontal {
     position: absolute;
-    top: 13px;
+    top: 2px;
     left: 5px;
-    width: 32px;
-    height: 32px;
+    width: 17px;
+    height: 54px;
     cursor: pointer;
     background: transparent url('../images/carousel_preNext.png') no-repeat 0 0;
 }
