@@ -11,19 +11,20 @@
 
 
 <div class="product-gallary" id="product-gallary">
-
-	<a href="#" data-image="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" 
-           data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>">
+	<<ul id="mycarousel" class="jcarousel-skin-tango">
+	<li data-image="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" 
+           data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" >
         	<img class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
-    </a>
+    </li>
 	<?php if (count($this->getGalleryImages()) > 0): ?>
     	<?php foreach ($this->getGalleryImages() as $_image): ?>
-        <a href="#" data-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(384); ?>" 
-           data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>">
+        <li data-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(384); ?>" 
+           data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>" >
         	<img class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(384); ?>" />
-        </a>
+        </li>
     	<?php endforeach; ?>
    	<?php endif; ?>
+   	</ul>
 </div>
 
 <script type="text/javascript">
@@ -37,13 +38,8 @@ $j(function(){
         borderColour:'#AAAAAA',
         zoomWindowOffetx:16,
     	zoomWindowOffety:0
-    }); 
+    });
 
-    $j(".imgPreview").bind("click", function(e) {  
-  	  var ez =   $j('.imgPreview').data('elevateZoom');
-  	  ez.closeAll(); //NEW: This function force hides the lens, tint and window	
-  		$j.fancybox(ez.getGalleryList());
-  	  return false;
-  	}); 
+    $j('#mycarousel').jcarousel();
 });  
 </script>

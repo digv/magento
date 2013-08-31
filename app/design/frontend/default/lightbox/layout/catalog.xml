@@ -184,9 +184,9 @@ Product view
         </reference>
         <reference name="head">
             <action method="addCss"><stylesheet>css/jquery.jqzoom.css</stylesheet></action>
+            <action method="addCss"><stylesheet>css/jcarousel.skin.css</stylesheet></action>
             <action method="addItem"><type>skin_js</type><name>js/jquery.elevatezoom.js</name></action>
-            <action method="addCss"><stylesheet>css/jquery.fancybox.css</stylesheet></action>
-            <action method="addItem"><type>skin_js</type><name>js/jquery.fancybox.pack.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery.jcarousel.js</name></action>
         </reference>
         <reference name="content">
             <block type="catalog/product_view" name="product.info" template="catalog/product/view.phtml">
