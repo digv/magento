@@ -30,7 +30,14 @@
 $j(function(){  
 
     $j('#product-carousel').jcarousel({scroll:1, visible:5});
-
+    $j('.imgPreview').elevateZoom({
+    	zoomWindowWidth:589,
+        zoomWindowHeight:383,
+        borderSize:1,
+        borderColour:'#AAAAAA',
+        zoomWindowOffetx:16,
+    	zoomWindowOffety:0
+    });
     $j('.productthumbnail').hover (function() {
 		$j('.productthumbnail').each(function(){
 				$j(this).removeClass ('hover');
@@ -38,6 +45,7 @@ $j(function(){
 		$j(this).addClass('hover');
 		$j('.imgPreview').attr('data-zoom-image', $j(this).attr('data-zoom-image'));
 		$j('.imgPreview').attr('src', $j(this).attr('src'));
+		$j('.zoomContainer').remove ();
 		$j('.imgPreview').elevateZoom({
 	    	zoomWindowWidth:589,
 	        zoomWindowHeight:383,
