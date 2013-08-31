@@ -2,7 +2,7 @@
     $_product = $this->getProduct();
     $_helper = $this->helper('catalog/output');
 ?>
-<div class="">
+<div class="widget magnify">
 		<img class="imgPreview" alt="" data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" title="" />
 </div>
 <script type="text/javascript">
