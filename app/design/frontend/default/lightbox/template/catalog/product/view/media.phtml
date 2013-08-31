@@ -22,6 +22,12 @@
         </li>
     	<?php endforeach; ?>
    	<?php endif; ?>
+   	<li>
+        	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
+    	</li>
+    	<li>
+        	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
+    	</li>
    	</ul>
 </div>
 
