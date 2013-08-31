@@ -2549,3 +2549,13 @@ a.favorEntry:hover {
 .magnify img {
 	width: 384px;
 }
+
+.prod-info-title h1 {
+    border-bottom: 1px solid #DDDDDD;
+    color: #333333;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 2px 0 7px;
+    position: relative;
+}
