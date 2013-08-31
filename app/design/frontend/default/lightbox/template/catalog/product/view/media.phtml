@@ -3,13 +3,11 @@
     $_helper = $this->helper('catalog/output');
 ?>
 <div class="">
-	<a href="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" class="previewImg">
-		<img alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" title="" />
-	</a>
+		<img class="imgPreview" alt="" data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" title="" />
 </div>
 <script type="text/javascript">
 
 $j(function(){  
-    $j('.previewImg').jqzoom();  
+    $j('.imgPreview').elevateZoom(); 
 });  
 </script>
