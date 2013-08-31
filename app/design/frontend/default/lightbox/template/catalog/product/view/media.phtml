@@ -30,6 +30,7 @@
 
 $j(function(){  
     $j('.imgPreview').elevateZoom({
+    	gallery:'product-gallary',
     	zoomWindowWidth:589,
         zoomWindowHeight:383,
         borderSize:1,
@@ -37,5 +38,12 @@ $j(function(){
         zoomWindowOffetx:16,
     	zoomWindowOffety:0
     }); 
+
+    $j(".imgPreview").bind("click", function(e) {  
+  	  var ez =   $j('.imgPreview').data('elevateZoom');
+  	  ez.closeAll(); //NEW: This function force hides the lens, tint and window	
+  		$j.fancybox(ez.getGalleryList());
+  	  return false;
+  	}); 
 });  
 </script>
