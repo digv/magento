@@ -45,7 +45,7 @@ $j(function(){
 		$j(this).addClass('hover');
 		$j('.imgPreview').attr('data-zoom-image', $j(this).attr('data-zoom-image'));
 		$j('.imgPreview').attr('src', $j(this).attr('src'));
-		var ez = $('.imgPreview').data('elevateZoom');
+		var ez = $j('.imgPreview').data('elevateZoom');
 		ez.closeAll ();
 		$j('.imgPreview').elevateZoom({
 	    	zoomWindowWidth:589,
