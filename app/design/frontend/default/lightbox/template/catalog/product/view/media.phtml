@@ -22,9 +22,6 @@
         </li>
     	<?php endforeach; ?>
    	<?php endif; ?>
-   	<li>
-        	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
-    	</li>
    	</ul>
 </div>
 
@@ -41,6 +38,6 @@ $j(function(){
     	zoomWindowOffety:0
     });
 
-    $j('#mycarousel').jcarousel({scroll:1, visible:1});
+    $j('#mycarousel').jcarousel({scroll:1, visible:3});
 });  
 </script>

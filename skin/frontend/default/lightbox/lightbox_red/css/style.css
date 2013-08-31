@@ -2560,6 +2560,6 @@ a.favorEntry:hover {
     position: relative;
 }
 .productthumbnail {
-	border:0;
+	border: 1px solid #CECFCE;
 	width:56px;
 }
