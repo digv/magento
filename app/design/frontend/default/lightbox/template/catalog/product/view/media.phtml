@@ -10,8 +10,8 @@
 </div>
 
 
-<div class="product-gallary" id="product-gallary">
-	<ul id="mycarousel" class="jcarousel-skin-tango">
+<div class="product-gallery" id="product-gallery">
+	<ul id="product-carousel" class="jcarousel-skin-tango">
 		<li>
         	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
     	</li>
@@ -28,16 +28,24 @@
 <script type="text/javascript">
 
 $j(function(){  
-    $j('.imgPreview').elevateZoom({
-    	gallery:'product-gallary',
-    	zoomWindowWidth:589,
-        zoomWindowHeight:383,
-        borderSize:1,
-        borderColour:'#AAAAAA',
-        zoomWindowOffetx:16,
-    	zoomWindowOffety:0
-    });
 
-    $j('#mycarousel').jcarousel({scroll:1, visible:5});
+    $j('#product-carousel').jcarousel({scroll:1, visible:5});
+
+    $j('.productthumbnail').hover (function() {
+		$j('.productthumbnail').each(function(){
+				$j(this).removeClass ('hover');
+		});
+		$j(this).addClass('hover');
+		$j('.imgPreview').attr('data-zoom-image', $j(this).attr('data-zoom-image'));
+		$j('.imgPreview').attr('src', $j(this).attr('src'));
+		$j('.imgPreview').elevateZoom({
+	    	zoomWindowWidth:589,
+	        zoomWindowHeight:383,
+	        borderSize:1,
+	        borderColour:'#AAAAAA',
+	        zoomWindowOffetx:16,
+	    	zoomWindowOffety:0
+	    });
+    });
 });  
 </script>
