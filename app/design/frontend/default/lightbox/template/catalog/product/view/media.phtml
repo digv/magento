@@ -9,16 +9,23 @@
 			 title="<?php echo $this->htmlEscape($this->getImageLabel()); ?>" />
 </div>
 
-<?php if (count($this->getGalleryImages()) > 0): ?>
-<div class="product-gallary">
-    <?php foreach ($this->getGalleryImages() as $_image): ?>
+
+<div class="product-gallary" id="product-gallary">
+
+	<a href="#" data-image="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail')->resize(56);?>" 
+           data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>">
+        	<img alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail')->resize(56);?>" />
+    </a>
+	<?php if (count($this->getGalleryImages()) > 0): ?>
+    	<?php foreach ($this->getGalleryImages() as $_image): ?>
         <a href="#" data-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(56); ?>" 
            data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>">
         	<img alt="" src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(56); ?>" />
         </a>
-    <?php endforeach; ?>
+    	<?php endforeach; ?>
+   	<?php endif; ?>
 </div>
-<?php endif; ?>
+
 <script type="text/javascript">
 
 $j(function(){  
