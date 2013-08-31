@@ -2559,3 +2559,7 @@ a.favorEntry:hover {
     padding: 2px 0 7px;
     position: relative;
 }
+.productthumbnail {
+	border:0;
+	width:56px;
+}
