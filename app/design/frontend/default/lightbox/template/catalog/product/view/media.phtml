@@ -12,15 +12,15 @@
 
 <div class="product-gallary" id="product-gallary">
 
-	<a href="#" data-image="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail')->resize(56);?>" 
+	<a href="#" data-image="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(56);?>" 
            data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>">
-        	<img alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail')->resize(56);?>" />
+        	<img alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(56);?>" />
     </a>
 	<?php if (count($this->getGalleryImages()) > 0): ?>
     	<?php foreach ($this->getGalleryImages() as $_image): ?>
-        <a href="#" data-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(56); ?>" 
+        <a href="#" data-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(56); ?>" 
            data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>">
-        	<img alt="" src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(56); ?>" />
+        	<img alt="" src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(56); ?>" />
         </a>
     	<?php endforeach; ?>
    	<?php endif; ?>
