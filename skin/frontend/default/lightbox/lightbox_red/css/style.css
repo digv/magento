@@ -2544,6 +2544,7 @@ a.favorEntry:hover {
     border-color: #DDDDDD;
     border-style: solid;
     border-width: 1px;
+    margin-bottom:6px;
 }
 
 .magnify img {
