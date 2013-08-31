@@ -11,16 +11,14 @@
 
 
 <div class="product-gallary" id="product-gallary">
-	<<ul id="mycarousel" class="jcarousel-skin-tango">
-	<li data-image="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" 
-           data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" >
-        	<img class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
-    </li>
+	<ul id="mycarousel" class="jcarousel-skin-tango">
+		<li>
+        	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
+    	</li>
 	<?php if (count($this->getGalleryImages()) > 0): ?>
     	<?php foreach ($this->getGalleryImages() as $_image): ?>
-        <li data-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(384); ?>" 
-           data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>" >
-        	<img class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(384); ?>" />
+        <li>
+        	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>" class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(384); ?>" />
         </li>
     	<?php endforeach; ?>
    	<?php endif; ?>
@@ -40,6 +38,6 @@ $j(function(){
     	zoomWindowOffety:0
     });
 
-    $j('#mycarousel').jcarousel();
+    $j('#mycarousel').jcarousel({scroll:2});
 });  
 </script>

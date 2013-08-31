@@ -69,13 +69,13 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
-    background: transparent url(next-horizontal.png) no-repeat 0 0;
+    background: transparent url(http://sorgalla.com/projects/jcarousel/skins/tango/next-horizontal.png) no-repeat 0 0;
 }
 
 .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
     left: 5px;
     right: auto;
-    background-image: url(prev-horizontal.png);
+    background-image: url(http://sorgalla.com/projects/jcarousel/skins/tango/prev-horizontal.png);
 }
 
 .jcarousel-skin-tango .jcarousel-next-horizontal:hover,
