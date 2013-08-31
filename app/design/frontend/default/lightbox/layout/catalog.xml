@@ -184,6 +184,7 @@ Product view
         </reference>
         <reference name="head">
             <action method="addCss"><stylesheet>css/jquery.jqzoom.css</stylesheet></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery.jqzoom-core.js</name></action>
         </reference>
         <reference name="content">
             <block type="catalog/product_view" name="product.info" template="catalog/product/view.phtml">
