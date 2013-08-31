@@ -180,3 +180,7 @@
     cursor: default;
     background-position: 0 -96px;
 }
+li.jcarousel-item img.hover {
+	border: 2px solid #E4393C;
+    padding: 0;
+}
