@@ -2519,7 +2519,7 @@ a.favorEntry:hover {
 }
 
 .container {
-    margin: 0 auto 10px;
+    margin: 10px auto 10px;
     width: 992px;
 }
 
@@ -2542,8 +2542,8 @@ a.favorEntry:hover {
     width: 384px;
     height:384px;
     border-color: #DDDDDD;
-    border-style: none solid solid;
-    border-width: 0 1px 1px;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .magnify img {
