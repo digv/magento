@@ -47,14 +47,7 @@ $j(function(){
 		$j('.imgPreview').attr('src', $j(this).attr('src'));
 		var ez = $j('.imgPreview').data('elevateZoom');
 		ez.closeAll ();
-		$j('.imgPreview').elevateZoom({
-	    	zoomWindowWidth:589,
-	        zoomWindowHeight:383,
-	        borderSize:1,
-	        borderColour:'#AAAAAA',
-	        zoomWindowOffetx:16,
-	    	zoomWindowOffety:0
-	    });
+		ez.swaptheimage ($j(this).attr('src'),$j(this).attr('data-zoom-image'));
     });
 });  
 </script>
