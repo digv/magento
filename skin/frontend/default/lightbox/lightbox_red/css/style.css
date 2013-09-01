@@ -2593,7 +2593,7 @@ a.favorEntry:hover {
 }
 
 .product-addtocart-form .order-quantity {
-    margin: 5px 0 8px;
+    margin: 5px 0 20px;
 }
 
 .product-addtocart-form .order-quantity label {
@@ -2627,7 +2627,9 @@ a.favorEntry:hover {
 
 .quantityarea {
 	width:300px;
-	float: left;
+	position:absolute;
+	top:0px;
+	left:60px;
 }
 
  .quantityarea .quantity-wrap-input {
