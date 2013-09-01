@@ -2609,10 +2609,13 @@ a.favorEntry:hover {
 	text-indent:-500px;
 }
 .order-actions .add-to-cart-pending {
-	background-position:0 -2240px;
+	background-position:0 0px;
+}
+.order-actions .add-to-cart-pending:hover {
+    background-position:-157px 0px;
 }
 .litb-btn, .litb-btn span {
-    background: url("../images/buttons_en_c685a7abfc24b3eb.png") repeat scroll 0 0 transparent;
+    background: url("../images/p-btns-20130826.png") repeat scroll 0 0 transparent;
 }
 .order-actions input {
     border: 0 none;
