@@ -1,6 +1,7 @@
 <?php
     $_product = $this->getProduct();
     $_helper = $this->helper('catalog/output');
+    var_dump($this->helper('catalog/image')->init($_product, 'image')->getOriginalWidth());
 ?>
 <div class="widget magnify">
 		<img class="imgPreview" alt="<?php echo $this->htmlEscape($this->getImageLabel()); ?>" 
