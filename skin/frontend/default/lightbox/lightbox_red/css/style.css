@@ -2578,3 +2578,9 @@ a.favorEntry:hover {
     margin-bottom: 10px;
     padding: 0 10px 10px 0;
 }
+
+.prod-info-price .price {
+    color: #A72D2C;
+    font: bold 24px/20px Helvetica,Arial,sans-serif;
+    position: relative;
+}
