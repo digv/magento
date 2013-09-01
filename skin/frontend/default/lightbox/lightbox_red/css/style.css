@@ -2591,3 +2591,33 @@ a.favorEntry:hover {
     padding-bottom: 10px;
     position: relative;
 }
+
+.product-addtocart-form .order-quantity {
+    margin: 5px 0 8px;
+}
+
+.product-addtocart-form .order-quantity label {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.product-addtocart-form .order-actions {
+	display:inline-block;
+}
+.product-addtocart-form .order-actions input {
+	text-indent:-500px;
+}
+.order-actions .add-to-cart-pending {
+	background-position:0 -2240px;
+}
+.litb-btn, .litb-btn span {
+    background: url("../images/buttons_en_c685a7abfc24b3eb.png") repeat scroll 0 0 transparent;
+}
+.order-actions input {
+    border: 0 none;
+    height: 37px;
+    margin: 0;
+    padding: 0;
+    width: 136px;
+}
