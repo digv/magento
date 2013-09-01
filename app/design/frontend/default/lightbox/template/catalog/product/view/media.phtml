@@ -3,9 +3,9 @@
     $_helper = $this->helper('catalog/output');
     
     //if width less than 500 then dont show the preview
-    $showPreview = true;
+    $showPreview = 'true';
     if($this->helper('catalog/image')->init($_product, 'image')->getOriginalWidth()){
-    	$showPreview = false;
+    	$showPreview = 'false';
     }
 ?>
 <div class="widget magnify"><img class="imgPreview"
