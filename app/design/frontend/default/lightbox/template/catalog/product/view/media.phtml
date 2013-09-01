@@ -4,7 +4,7 @@
     
     //if width less than 500 then dont show the preview
     $showPreview = 'true';
-    if($this->helper('catalog/image')->init($_product, 'image')->getOriginalWidth()){
+    if($this->helper('catalog/image')->init($_product, 'image')->getOriginalWidth() < 500){
     	$showPreview = 'false';
     }
 ?>
