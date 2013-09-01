@@ -1282,7 +1282,8 @@ if ( typeof Object.create !== 'function' ) {
 					else{
 						lensWidth =  (self.options.zoomWindowWidth/self.widthRatio);
 					}
-
+					lensWidth = '64';
+					lensHeight = '64';
 					if(self.zoomLens){
 						self.zoomLens.css('width', lensWidth);    
 						self.zoomLens.css('height', lensHeight); 
