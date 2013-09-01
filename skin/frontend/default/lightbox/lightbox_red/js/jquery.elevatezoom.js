@@ -573,7 +573,7 @@ if ( typeof Object.create !== 'function' ) {
 						self.widthRatio = self.largeWidth / self.nzWidth;
 						self.heightRatio = self.largeHeight / self.nzHeight;        
 						if(self.options.zoomType != "lens") {
-							self.zoomLens.css({ width: '64px', height:'64px' })      
+							self.zoomLens.css({ width: '175px', height:'175px' })      
 
 						}                     
 						if(self.options.zoomType == "lens") {
