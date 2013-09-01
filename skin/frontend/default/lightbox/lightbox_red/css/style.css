@@ -2584,3 +2584,10 @@ a.favorEntry:hover {
     font: bold 24px/20px Helvetica,Arial,sans-serif;
     position: relative;
 }
+
+.product-addtocart-form {
+	border-bottom: 1px solid #DDDDDD;
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
