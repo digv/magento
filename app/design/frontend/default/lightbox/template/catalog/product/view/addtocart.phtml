@@ -9,9 +9,9 @@
 		<label for="quantity"><?php echo $this->__('购买数量:') ?></label>
 		<div class="quantityarea">
 			<div class="quantity-wrap-input">
-				<a class="btn-reduce" onclick="setAmount.reduce('#qty-num')" href="javascript:;"><?php echo $this->__('减少数量') ?></a>
-				<a class="btn-add" onclick="setAmount.add('#qty-num')" href="javascript:;"><?php echo $this->__('增加数量') ?></a>
-				<input id="qty-num" class="text" onkeyup="setAmount.modify('#qty-num');" value="1" name='qty'>
+				<a class="btn-reduce" onclick="setAmountReduce('#qty-num')" href="javascript:;"><?php echo $this->__('减少数量') ?></a>
+				<a class="btn-add" onclick="setAmountAdd('#qty-num')" href="javascript:;"><?php echo $this->__('增加数量') ?></a>
+				<input id="qty-num" class="text" value="1" name='qty'>
 			</div>
 		</div>
 	</div>
@@ -23,3 +23,13 @@
 		
 	</div>
 <?php endif; ?>
+
+<script type="text/javascript">
+function setAmountReduce (id) {
+	$j('"' + id + '"'). val ($j('"' + id + '"'). val() - 1);
+}
+
+function setAmountAdd (id) {
+	$j('"' + id + '"'). val ($j('"' + id + '"'). val() + 1);
+}
+</script>
