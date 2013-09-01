@@ -1518,7 +1518,7 @@ if ( typeof Object.create !== 'function' ) {
 						if(self.options.zoomType != "lens" && self.options.zoomType != "inner") {
 							self.changeBgSize = true;
 
-							self.zoomLens.css({height: '64px' }) 
+							self.zoomLens.css({height: '175px' }) 
 						}
 						if(self.options.zoomType == "lens" || self.options.zoomType == "inner") {  
 							self.changeBgSize = true;  
@@ -1544,7 +1544,7 @@ if ( typeof Object.create !== 'function' ) {
 						if(self.options.zoomType != "lens" && self.options.zoomType != "inner") {
 							self.changeBgSize = true;
 
-							self.zoomLens.css({width: '64px' })
+							self.zoomLens.css({width: '175px' })
 						}
 						if(self.options.zoomType == "lens" || self.options.zoomType == "inner") {  
 							self.changeBgSize = true;
