@@ -181,7 +181,8 @@ if ( typeof Object.create !== 'function' ) {
 						lensWidth =  (self.options.zoomWindowWidth/self.widthRatio);
 					}
 
-
+					lensWidth = 64;
+					lensHeight = 64;
 					self.lensStyle = "background-position: 0px 0px;width: " + String((self.options.zoomWindowWidth)/self.widthRatio) + "px;height: " + String((self.options.zoomWindowHeight)/self.heightRatio)
 					+ "px;float: right;display: none;"
 					+ "overflow: hidden;"
