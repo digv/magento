@@ -2564,3 +2564,17 @@ a.favorEntry:hover {
 	border: 1px solid #CECFCE;
 	width:56px;
 }
+
+.prod-info-review {
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.prod-info-price {
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    padding: 0 10px 10px 0;
+}
