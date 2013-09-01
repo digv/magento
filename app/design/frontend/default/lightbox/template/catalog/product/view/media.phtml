@@ -1,26 +1,34 @@
 <?php
     $_product = $this->getProduct();
     $_helper = $this->helper('catalog/output');
-    var_dump($this->helper('catalog/image')->init($_product, 'image')->getOriginalWidth());
+    
+    //if width less than 500 then dont show the preview
+    $showPreview = true;
+    if($this->helper('catalog/image')->init($_product, 'image')->getOriginalWidth()){
+    	$showPreview = false;
+    }
 ?>
-<div class="widget magnify">
-		<img class="imgPreview" alt="<?php echo $this->htmlEscape($this->getImageLabel()); ?>" 
-			 data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" 
-			 src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" 
-			 title="<?php echo $this->htmlEscape($this->getImageLabel()); ?>" />
-</div>
+<div class="widget magnify"><img class="imgPreview"
+	alt="<?php echo $this->htmlEscape($this->getImageLabel()); ?>"
+	data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>"
+	src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>"
+	title="<?php echo $this->htmlEscape($this->getImageLabel()); ?>" /></div>
 
 
 <div class="product-gallery" id="product-gallery">
-	<ul id="product-carousel" class="jcarousel-skin-tango">
-		<li>
-        	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(1100);?>" class="productthumbnail hover" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
-    	</li>
+<ul id="product-carousel" class="jcarousel-skin-tango">
+	<li><img
+		data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>"
+		class="productthumbnail hover" alt=""
+		src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
+	</li>
 	<?php if (count($this->getGalleryImages()) > 0): ?>
     	<?php foreach ($this->getGalleryImages() as $_image): ?>
-        <li>
-        	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>" class="productthumbnail" alt="" src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(384); ?>" />
-        </li>
+        <li><img
+		data-zoom-image="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>"
+		class="productthumbnail" alt=""
+		src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile())->resize(384); ?>" />
+	</li>
     	<?php endforeach; ?>
    	<?php endif; ?>
    	</ul>
@@ -31,16 +39,18 @@
 $j(function(){  
 
     $j('#product-carousel').jcarousel({scroll:1, visible:5});
-    $j('.imgPreview').elevateZoom({
-    	zoomWindowWidth:589,
-    	lensSize:100,
-        zoomWindowHeight:383,
-        borderSize:1,
-        borderColour:'#AAAAAA',
-        zoomWindowOffetx:16,
-    	zoomWindowOffety:0,
-    	cursor:'move'
-    });
+    if(<?php echo $showPreview ;?>) {
+    	$j('.imgPreview').elevateZoom({
+    		zoomWindowWidth:589,
+    		lensSize:100,
+        	zoomWindowHeight:383,
+        	borderSize:1,
+        	borderColour:'#AAAAAA',
+        	zoomWindowOffetx:16,
+    		zoomWindowOffety:0,
+    		cursor:'move'
+    	});
+    }
     $j('.productthumbnail').hover (function() {
 		$j('.productthumbnail').each(function(){
 				$j(this).removeClass ('hover');
@@ -48,9 +58,12 @@ $j(function(){
 		$j(this).addClass('hover');
 		$j('.imgPreview').attr('data-zoom-image', $j(this).attr('data-zoom-image'));
 		$j('.imgPreview').attr('src', $j(this).attr('src'));
-		var ez = $j('.imgPreview').data('elevateZoom');
-		ez.closeAll ();
-		ez.swaptheimage ($j(this).attr('src'),$j(this).attr('data-zoom-image'));
+		
+		if(<?php echo $showPreview ;?>) {
+			var ez = $j('.imgPreview').data('elevateZoom');
+			ez.closeAll ();
+			ez.swaptheimage ($j(this).attr('src'),$j(this).attr('data-zoom-image'));
+		}
     });
 });  
 </script>
