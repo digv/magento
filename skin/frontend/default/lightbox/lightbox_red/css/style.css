@@ -2624,3 +2624,49 @@ a.favorEntry:hover {
     padding: 0;
     width: 136px;
 }
+
+.quantityarea {
+	width:300px;
+	float: left;
+}
+
+ .quantityarea .quantity-wrap-input {
+    padding: 0 18px;
+    position: relative;
+    width: 36px;
+}
+
+.quantityarea .quantity-wrap-input a {
+    height: 15px;
+    line-height: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 3px;
+    width: 15px;
+}
+
+.quantityarea .quantity-wrap-input a {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    background-image: url("../images/newicon20130617.png");
+    background-repeat: no-repeat;
+}
+
+.quantityarea .quantity-wrap-input .btn-reduce {
+    background-position: -216px -190px;
+    left: 0;
+}
+
+.quantityarea .quantity-wrap-input .btn-add {
+    background-position: -232px -190px;
+    right: 0;
+}
+
+.quantityarea .quantity-wrap-input .text {
+    border: 1px solid #CCCCCC;
+    height: 16px;
+    padding: 2px;
+    text-align: center;
+    width: 30px;
+}
