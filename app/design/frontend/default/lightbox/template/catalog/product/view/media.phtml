@@ -14,7 +14,7 @@
 <div class="product-gallery" id="product-gallery">
 	<ul id="product-carousel" class="jcarousel-skin-tango">
 		<li>
-        	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image');?>" class="productthumbnail hover" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
+        	<img data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(1100);?>" class="productthumbnail hover" alt="" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->resize(384);?>" />
     	</li>
 	<?php if (count($this->getGalleryImages()) > 0): ?>
     	<?php foreach ($this->getGalleryImages() as $_image): ?>
