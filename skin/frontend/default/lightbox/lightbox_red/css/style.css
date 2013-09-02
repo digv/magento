@@ -2699,3 +2699,7 @@ a.favorEntry:hover {
 	 margin-left: -1px;
     overflow: visible;
 }
+.product-tabs li, .product-tabs a, .tab-item {
+    float: left;
+    text-align: center;
+}
