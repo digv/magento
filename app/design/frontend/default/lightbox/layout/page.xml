@@ -16,6 +16,8 @@ Default layout, loads most of the pages
                 <action method="addJs"><script>scriptaculous/dragdrop.js</script></action>
                 <action method="addJs"><script>scriptaculous/controls.js</script></action>
                 <action method="addJs"><script>scriptaculous/slider.js</script></action>
+                <action method="addJs"><script>varien/js.js</script></action>
+                <action method="addJs"><script>varien/form.js</script></action>
                 <action method="addCss"><stylesheet>css/lightbox_style.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/lightbox_skin.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/style.css</stylesheet></action>
