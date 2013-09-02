@@ -2680,3 +2680,7 @@ a.favorEntry:hover {
 .product-options {
     padding-bottom:8px;
 }
+
+.product-info .pull-left {
+	width:640px;
+}
