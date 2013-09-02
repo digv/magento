@@ -30,6 +30,7 @@
  * @see Mage_Catalog_Block_Product_View
  */
 ?>
+<div class="float-nav-wrap">
 <ul class="product-tabs">
     <?php foreach ($this->getTabs() as $_index => $_tab): ?>
         <?php if($this->getChildHtml($_tab['alias'])): ?>
@@ -37,6 +38,7 @@
         <?php endif; ?>
     <?php endforeach; ?>
 </ul>
+</div>
 <?php foreach ($this->getTabs() as $_index => $_tab): ?>
     <?php if($this->getChildHtml($_tab['alias'])): ?>
         <div class="product-tabs-content" id="product_tabs_<?php echo $_tab['alias'] ?>_contents"><?php echo $this->getChildHtml($_tab['alias']) ?></div>

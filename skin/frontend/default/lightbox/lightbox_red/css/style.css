@@ -2684,3 +2684,18 @@ a.favorEntry:hover {
 .product-info .pull-left {
 	width:640px;
 }
+
+.float-nav-wrap {
+	height:30px;
+	width: 988px;
+	overflow: visible;
+	background: none repeat scroll 0 center transparent;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+}
+
+.product-tabs {
+	 float: left;
+	 margin-left: -1px;
+    overflow: visible;
+}
