@@ -2725,3 +2725,10 @@ a.favorEntry:hover {
 .tab-item {
 	text-align: center;
 }
+
+.product-tabs li.active {
+	background-color: #FFFFFF;
+    color: #E4393C;
+    margin-top: -6px;
+    border-top: 2px solid #E4393C;
+}
