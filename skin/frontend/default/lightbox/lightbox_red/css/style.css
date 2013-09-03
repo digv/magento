@@ -2698,6 +2698,7 @@ a.favorEntry:hover {
 	 float: left;
 	 margin-left: -1px;
     overflow: visible;
+    font: 14px/30px 'microsoft yahei';
 }
 .product-tabs li, .product-tabs a, .tab-item {
     float: left;
@@ -2708,4 +2709,18 @@ a.favorEntry:hover {
 	overflow: visible;
 	background: url("../images/tab.png") repeat-x scroll 0 -41px transparent;
     padding-top: 2px;
+}
+
+.product-tabs li a {
+	float: left;
+}
+
+.product-tabs  a {
+    height: 30px;
+    line-height: 28px;
+    padding: 0 13px;
+}
+
+.tab-item {
+	text-align: center;
 }
