@@ -2703,3 +2703,9 @@ a.favorEntry:hover {
     float: left;
     text-align: center;
 }
+
+.product-info {
+	overflow: visible;
+	background: url("../images/tab.png") repeat-x scroll 0 -41px transparent;
+    padding-top: 2px;
+}
