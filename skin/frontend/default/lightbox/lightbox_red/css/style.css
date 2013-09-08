@@ -2606,7 +2606,7 @@ a.favorEntry:hover {
 	display:inline-block;
 }
 .product-addtocart-form .order-actions input {
-	text-indent:-9999px;
+	text-indent:500px;
 	text-transform: capitalize;
 	line-height:1px;
 	display:inline-block;
