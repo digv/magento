@@ -2606,7 +2606,8 @@ a.favorEntry:hover {
 	display:inline-block;
 }
 .product-addtocart-form .order-actions input {
-	text-indent:-500px;
+	text-indent:-9999px;
+	text-transform: capitalize;
 }
 .order-actions .add-to-cart-pending {
 	background-position:0 0px;
