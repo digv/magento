@@ -2754,3 +2754,7 @@ a:focus {
     line-height: 34px;
     padding: 0 12px;
 }
+
+.product-details-container {
+	margin-top:20px;
+}
