@@ -2687,7 +2687,7 @@ a.favorEntry:hover {
 
 .float-nav-wrap {
 	height:30px;
-	width: 990px;
+	width: 991px;
 	overflow: visible;
 	background: none repeat scroll 0 center transparent;
     border-left: 1px solid #DDDDDD;
@@ -2727,8 +2727,8 @@ a.favorEntry:hover {
 }
 
 .product-tabs  a {
-    height: 34px;
-    line-height: 32px;
+    height: 30px;
+    line-height: 28px;
     padding: 0 13px;
 }
 
@@ -2741,4 +2741,17 @@ a.favorEntry:hover {
     color: #E4393C;
     margin-top: -6px;
     border-top: 2px solid #E4393C;
+}
+
+a:focus { 
+    outline: none; 
+}
+
+.product-tabs .active a {
+	border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    color: #E4393C;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 12px;
 }
