@@ -66,7 +66,7 @@
  	</div>
 
     <div class="toolbar-bottom">
-        <?php echo $this->getLayout()->createBlock('catalog/product_list_toolbar') -> getPagerHtml (); ?>
+        <?php echo $this->getLayout()->createBlock('catalog/product_list_toolbar') ->setChild ('', 'page/html_pager') -> getPagerHtml (); ?>
     </div>
 </div>
 <?php endif; ?>
