@@ -2608,6 +2608,7 @@ a.favorEntry:hover {
 .product-addtocart-form .order-actions input {
 	text-indent:-9999px;
 	text-transform: capitalize;
+	line-height:1px;
 }
 .order-actions .add-to-cart-pending {
 	background-position:0 0px;
