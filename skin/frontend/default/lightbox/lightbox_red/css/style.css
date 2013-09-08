@@ -2687,13 +2687,23 @@ a.favorEntry:hover {
 
 .float-nav-wrap {
 	height:30px;
-	width: 988px;
+	width: 990px;
 	overflow: visible;
 	background: none repeat scroll 0 center transparent;
     border-left: 1px solid #DDDDDD;
     border-right: 1px solid #DDDDDD;
 }
-
+.product-tabs-content {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #DEDFDE;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding: 8px;
+}
 .product-tabs {
 	 float: left;
 	 margin-left: -1px;
@@ -2717,8 +2727,8 @@ a.favorEntry:hover {
 }
 
 .product-tabs  a {
-    height: 30px;
-    line-height: 28px;
+    height: 34px;
+    line-height: 32px;
     padding: 0 13px;
 }
 
