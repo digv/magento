@@ -2609,7 +2609,7 @@ a.favorEntry:hover {
 	text-indent:500px;
 	text-transform: capitalize;
 	line-height:1px;
-	display:inline-block;
+	display:block;
 }
 .order-actions .add-to-cart-pending {
 	background-position:0 0px;
