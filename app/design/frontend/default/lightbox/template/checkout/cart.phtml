@@ -38,7 +38,7 @@
             <?php $mergedCells = ($this->helper('tax')->displayCartBothPrices() ? 2 : 1); ?>
                 <thead>
                     <tr>
-                        <th rowspan="<?php echo $mergedCells; ?>">&nbsp;</th>
+                        <th rowspan="<?php echo $mergedCells; ?>" class="row-img">&nbsp;</th>
                         <th rowspan="<?php echo $mergedCells; ?>" class="product-name-head"><span class="nobr"><?php echo $this->__('Product Name') ?></span></th>
                         <th rowspan="<?php echo $mergedCells; ?>"></th>
                         <?php if ($this->helper('wishlist')->isAllowInCart()) : ?>
