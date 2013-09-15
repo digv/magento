@@ -2830,3 +2830,19 @@ a:focus {
 p.availability  {
 	padding-bottom:10px;
 }
+
+.cart {
+    margin-top: 20px;
+}
+.cart .page-title {
+    height: 35px;
+}
+.cart .page-title h1 {
+    background: url("../images/my_cart_title.png") no-repeat scroll left top transparent;
+    float: left;
+    height: 20px;
+    line-height: 100px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 100px;
+}
