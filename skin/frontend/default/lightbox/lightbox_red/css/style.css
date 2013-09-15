@@ -2895,6 +2895,7 @@ p.availability {
 }
 
 .cart-price .price {
-	color: #80000A;	
+	color: #80000A;
+	font-size:12px;
 }
 }
