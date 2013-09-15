@@ -8,7 +8,9 @@
 ?>
 <?php $_helper = $this->helper('catalog/output'); ?>
 <?php $_product = $this->getProduct(); ?>
-
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
 <div class="container">
 	<div class="pull-left litb-span24">
 		 <?php echo $this->getChildHtml('media') ?>
