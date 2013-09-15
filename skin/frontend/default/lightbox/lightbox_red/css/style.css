@@ -2821,6 +2821,10 @@ a:focus {
 	color: #333333;
     font-size: 12px;
     line-height: 18px;
+    padding-right: 4px;
+    text-align: right;
+    width: 45px;
+    float:left;
 }
 
 p.availability  {
