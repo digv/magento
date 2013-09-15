@@ -9,7 +9,7 @@ class Lightbox_Product_Block_Product_Latest extends Lightbox_Product_Block_Produ
 		$collection = $this->getCollection ( 'catalog/product_collection' )
 						-> addAttributeToSelect ( 'rating_summary' )
 						->setOrder ( 'created_at', 'desc' )
-						-> setPageSize('10')
+						-> setPageSize('12')
 						-> setCurPage('1');
 		//Mage::getModel('review/review')->appendSummary($collection);
 						//var_dump($collection -> getSelect()->__toString());

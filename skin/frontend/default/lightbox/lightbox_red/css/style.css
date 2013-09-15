@@ -1787,7 +1787,7 @@ a.favorEntry:hover {
 .w-grid-752-5cols dl {
 	overflow: hidden;
 	padding: 15px 0 20px 16px;
-	width: 128px;
+	width: 160px;
 }
 
 .w-grid-752-5cols dl dt {
@@ -2816,4 +2816,9 @@ a:focus {
 	display: inline-block;
 	margin: 0 3px;
 	padding: 5px 7px
+}
+.price-box .price-label {
+	color: #333333;
+    font-size: 12px;
+    line-height: 18px;
 }
