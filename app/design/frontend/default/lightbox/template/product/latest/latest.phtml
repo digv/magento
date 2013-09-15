@@ -1,6 +1,6 @@
 <div id="recProdsHeading"
 	class="clearfix page-heading w-recommend-products-heading"><a
-	class="heading-title title-tab" href="">最新上架</a>
+	class="heading-title title-tab" href="">鏈�柊涓婃灦</a>
 </div>
 
 <div id="recProds">
@@ -23,7 +23,7 @@
 				</dd>
 				<dd class="prodPrice">
 					<a  class="price" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_product->getName()) ?>">
-						<?php echo $_product->getFormatedPrice(); ?>
+						<?php echo $this->getPriceHtml($_product, true) ?>
 					</a>
 				</dd>
 				<dd class="prodReview">
