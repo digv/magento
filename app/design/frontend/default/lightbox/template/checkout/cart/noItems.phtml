@@ -14,8 +14,10 @@
     	<div class="message">
     		<?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
     		<?php echo $this->getChildHtml('checkout_cart_empty_widget'); ?>
-    		<p><?php echo $this->__('You have no items in your shopping cart.') ?></p>
-    		<p><?php echo $this->__('Click <a href="%s">here</a> to continue shopping.', $this->getContinueShoppingUrl()) ?></p>
+    		<ul>
+    			<li><?php echo $this->__('You have no items in your shopping cart.') ?></li>
+    			<li><?php echo $this->__('Click <a href="%s">here</a> to continue shopping.', $this->getContinueShoppingUrl()) ?></li>
+    		</ul>
     		<?php echo $this->getChildHtml('shopping.cart.table.after'); ?>
     	</div>
 	</div>
