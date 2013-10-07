@@ -2909,3 +2909,9 @@ p.availability {
     height: 98px;
     padding-left: 341px;
 }
+.cart-empty ul {
+	padding-top: 23px;
+}
+.cart-empty ul li {
+	line-height: 26px;
+}
