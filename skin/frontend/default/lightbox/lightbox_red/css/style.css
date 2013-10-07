@@ -2898,4 +2898,14 @@ p.availability {
 	color: #80000A;
 	font-size:12px;
 }
+
+.cart-empty {
+	border: 1px solid #DDDDDD;
+    height: 98px;
+}
+
+.cart-empty > .message {
+	background: url("../images/cart-empty-bg.png") no-repeat scroll 250px 22px #F3F3F3;
+    height: 98px;
+    padding-left: 341px;
 }
